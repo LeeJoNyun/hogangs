@@ -1,0 +1,23 @@
+@use "./../utils" as *;
+.join-inner {
+  height: 297px !important;
+  @include flexbox();
+  gap: 48px;
+  .bottom {
+    @include flexbox();
+    .success-box {
+      @include flexbox();
+      flex-direction: column;
+      gap: 35px;
+      p {
+        color: var(--Grey-grey-900, #515151);
+        text-align: center;
+        font-family: Pretendard;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+      }
+    }
+  }
+}

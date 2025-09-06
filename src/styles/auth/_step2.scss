@@ -1,0 +1,97 @@
+@use "./../utils" as *;
+.join-inner {
+  height: 457px !important;
+  .bottom {
+    height: 304px;
+    form {
+      .birth {
+        width: 100%;
+        height: 63px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        span {
+          color: var(--Grey-grey-900, #515151);
+          font-family: Pretendard;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        .selects {
+          width: 100%;
+          @include flexbox();
+          gap: 15px;
+          .wrap {
+            @include flexbox();
+            gap: 5px;
+            span {
+              color: #000;
+              font-family: Pretendard;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 130%;
+            }
+          }
+          select {
+            width: 90px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid var(--Grey-grey-400, #818181);
+            display: flex;
+            padding: 5px 5px 5px 8px;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 12px;
+            color: var(--Grey-grey-200, #b6b6b6);
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+          }
+        }
+      }
+      .phone {
+        width: 100%;
+        height: 63px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        span {
+          color: var(--Grey-grey-900, #515151);
+          font-family: Pretendard;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        .selects {
+          width: 100%;
+          @include flexbox();
+          gap: 8px;
+          select {
+            width: 104px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid var(--Grey-grey-400, #818181);
+            display: flex;
+            padding: 5px 5px 5px 8px;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 12px;
+            color: var(--Grey-grey-200, #b6b6b6);
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+          }
+          input {
+            width: 104px !important;
+            height: 40px !important;
+          }
+        }
+      }
+    }
+  }
+}
