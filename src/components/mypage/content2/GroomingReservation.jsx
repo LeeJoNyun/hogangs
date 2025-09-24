@@ -1,10 +1,15 @@
-import React from "react";
+import { format } from "date-fns";
+import { ko } from "date-fns/locale";
 
-const GroomingReservation = ({ isPast }) => {
+const formatKRDate = (value) => {
+  return format(new Date(value), "yy년 MM월 dd일", { locale: ko });
+};
+const GroomingReservation = ({ data }) => {
+  const { type, startDate, endDate, status, beautyTime } = data;
   return (
     <div
       id="groomingReservationBox"
-      className={`groomingReservationBox ${isPast ? "past" : "upcoming"}`}
+      className={`groomingReservationBox ${status} === 0 ? "past" : "upcoming"`}
     >
       <div className="left">
         <img src="/mypage/groomingDog.png" alt="groomingDog" />
@@ -12,8 +17,8 @@ const GroomingReservation = ({ isPast }) => {
       <div className="right">
         <p>미용예약완료</p>
         <span className="date">
-          25년 09월 18일 <br />
-          17:00
+          {formatKRDate(startDate)} <br />
+          {beautyTime}
         </span>
       </div>
     </div>
