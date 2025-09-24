@@ -165,7 +165,7 @@ const MyContent1 = ({ onUpdateDogProfile }) => {
                           />
                         </div>
                       </div>
-                      <div className="bottom">
+                      {/* <div className="bottom">
                         <div className="about">
                           <div className="name">{dog.name}</div>
                           <div className="age">{dog.age}살</div>
@@ -180,7 +180,7 @@ const MyContent1 = ({ onUpdateDogProfile }) => {
                             <strong>0</strong>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 ))}
