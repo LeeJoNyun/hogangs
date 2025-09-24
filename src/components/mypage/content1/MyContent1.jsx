@@ -42,7 +42,7 @@ const MyContent1 = ({ onUpdateDogProfile }) => {
     if (reservations.length > 0) {
       const upcoming = [];
       const past = [];
-      console.log(reservations);
+
       for (const res of reservations) {
         if (res.resType === "hotel") {
           const data = {
@@ -298,9 +298,9 @@ const MyContent1 = ({ onUpdateDogProfile }) => {
                 <div className="reservationList hasData">
                   {pastReservations.map((res) =>
                     res.type === "hotel" ? (
-                      <HotelReservation key={res.id} isPast />
+                      <HotelReservation key={res.id} data={res} />
                     ) : (
-                      <GroomingReservation key={res.id} isPast />
+                      <GroomingReservation key={res.id} data={res} />
                     )
                   )}
                 </div>
