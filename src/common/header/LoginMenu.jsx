@@ -20,7 +20,7 @@ const LoginMenu = () => {
           {name}님
         </p>
       </div>
-      <i>
+      {/* <i>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
@@ -33,7 +33,7 @@ const LoginMenu = () => {
             fill=" #292929"
           />
         </svg>
-      </i>
+      </i> */}
     </div>
   );
 };

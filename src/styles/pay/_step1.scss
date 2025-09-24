@@ -275,12 +275,13 @@ select {
       display: flex;
       flex-flow: column;
       gap: 40px;
+      z-index: 10;
       .receipt {
         width: 100%;
         padding: 53px 30px 52px 30px;
         border-radius: 20px;
         border: 1px solid #cecece;
-
+        z-index: 2;
         .receipt_inner {
           width: 360px;
           display: flex;

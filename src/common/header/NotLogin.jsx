@@ -13,7 +13,7 @@ const NotLogin = () => {
       <li className="join_btn" onClick={() => setJoinModal(true)}>
         Join
       </li>
-      <li>
+      {/* <li>
         <i>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ const NotLogin = () => {
             />
           </svg>
         </i>
-      </li>
+      </li> */}
     </ul>
   );
 };
