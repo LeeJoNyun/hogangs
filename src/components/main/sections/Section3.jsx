@@ -85,7 +85,7 @@ export default function Section3() {
       <div className="video">
         <div className="video-frame" ref={videoRef}>
           <video
-            src="https://port-0-teampf-be-mfuk3dbl08000d12.sel3.cloudtype.app/video/dog.mp4"
+            src="https://port-0-teampf-be-mfuk3dbl08000d12.sel3.cloudtype.app/video/dog.mp4?raw=true"
             loop
             muted
             autoPlay
