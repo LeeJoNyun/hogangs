@@ -19,12 +19,12 @@ const Pay = () => {
   useEffect(() => {
     loadLocalStorageForm();
     // 정상 접근이 아닌경우 Main으로 리디렉션
-    if (!isNormalLogic) {
-      navigate("/");
-    }
-    if (!reservationForm) {
-      navigate("/");
-    }
+    // if (!isNormalLogic) {
+    //   navigate("/");
+    // }
+    // if (!reservationForm) {
+    //   navigate("/");
+    // }
   }, []);
 
   // reservationForm 데이터 불러오기
