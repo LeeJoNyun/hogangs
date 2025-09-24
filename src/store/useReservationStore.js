@@ -169,7 +169,8 @@ const useReservationStore = create((set, get) => ({
             couponId: selectedCouponId,
             request: requestMessage ?? '',
         };
-
+        // coupon 사용
+        await axios.patch(`${API_URL.replace(/\/+$/, '')}/user-coupons/${selectedCouponId}/use`);
         const res = await axios.post(`${API_URL.replace(/\/+$/, '')}/reservation`, payload, {
             headers: { 'Content-Type': 'application/json' },
         });
