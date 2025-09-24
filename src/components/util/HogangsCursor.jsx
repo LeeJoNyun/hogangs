@@ -9,7 +9,7 @@ import gsap from "gsap";
 export default function HogangsCursor({
   src, // 회전 이미지(svg/png 등)
   size = 160,
-  speed = 6, // 1바퀴(sec)
+  speed = 0.3, // 1바퀴(sec)
   centerText = "클릭하개",
   centerColor = "#fff",
   centerFontSize = 18,

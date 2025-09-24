@@ -305,9 +305,9 @@ export default function BubbleLanding({ onClose }) {
   return (
     <>
       <HogangsCursor
-        src="/main/circle.svg" // <- 네가 넣은 경로
+        src="/main/m.png" // <- 네가 넣은 경로
         size={150}
-        speed={3} // 숫자 작을수록 빠름(초/회전)
+        speed={2} // 숫자 작을수록 빠름(초/회전)
       />
       <div
         ref={overlayRef}
