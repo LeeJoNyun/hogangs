@@ -170,7 +170,9 @@ const useReservationStore = create((set, get) => ({
             request: requestMessage ?? '',
         };
         // coupon 사용
-        await axios.patch(`${API_URL.replace(/\/+$/, '')}/user-coupons/${selectedCouponId}/use`);
+        if (selectedCouponId) {
+            await axios.patch(`${API_URL.replace(/\/+$/, '')}/user-coupons/${selectedCouponId}/use`);
+        }
         const res = await axios.post(`${API_URL.replace(/\/+$/, '')}/reservation`, payload, {
             headers: { 'Content-Type': 'application/json' },
         });
@@ -183,7 +185,7 @@ const useReservationStore = create((set, get) => ({
     },
 
     cancelReservation: async (resId, couponId) => {
-        console.log(couponId);
+
         const { res } = await axios.patch(
             `${API_URL.replace(/\/+$/, '')}/reservation/${resId}/cancel`,
             {
