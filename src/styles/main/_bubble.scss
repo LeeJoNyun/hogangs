@@ -153,9 +153,9 @@
   top: clamp(28px, 4.5vh, 60px);
   left: 50%;
   transform: translateX(-50%);
-  width: 238px; /* 필요에 맞게 조절 */
+  width: 475px;
   height: 110px; /* 필요에 맞게 조절 */
-  background: url("/main/Logo.png") no-repeat center/contain; /* 로고 소스 경로 */
+  background: url("/main/logo_text.png") no-repeat center/contain; /* 로고 소스 경로 */
   opacity: 0; /* ✅ 처음엔 보이지 않음 */
   pointer-events: none; /* 클릭 막기 */
   z-index: 3;

@@ -44,7 +44,7 @@ export default function HogangsCursor({
     const spin = gsap.to(ring, {
       rotation: 360,
       ease: "none",
-      duration: speed,
+      duration: 5,
       repeat: -1,
       paused: true,
       transformOrigin: "50% 50%",
