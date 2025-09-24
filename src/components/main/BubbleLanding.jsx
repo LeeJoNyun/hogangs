@@ -307,7 +307,7 @@ export default function BubbleLanding({ onClose }) {
       <HogangsCursor
         src="/main/m.png" // <- 네가 넣은 경로
         size={150}
-        speed={2} // 숫자 작을수록 빠름(초/회전)
+        speed={1} // 숫자 작을수록 빠름(초/회전)
       />
       <div
         ref={overlayRef}
@@ -340,6 +340,7 @@ export default function BubbleLanding({ onClose }) {
           className="bubble-wrap"
           aria-hidden={popped ? "true" : "false"}
         >
+          <div className="pop_text"></div>
           <svg
             ref={bubbleRef}
             className={`bubble ${popped ? "popping" : ""}`}
