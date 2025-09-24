@@ -660,8 +660,16 @@
           display: flex;
           gap: 6px;
           align-items: center;
-          label {
+          .label {
             width: 65px;
+            color: var(--Grey-grey-600, #585858);
+
+            /* Medium/16px */
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%; /* 20.8px */
           }
           input {
             display: flex;
@@ -679,15 +687,56 @@
           }
           .radioWrap {
             display: flex;
-            label {
-              width: 130px;
+            gap: 30px;
+
+            .choice {
               display: flex;
               align-items: center;
               gap: 6px;
-              input {
+              /* 기본값: 흰 구멍 지름을 조금 줄인 버전 (기존 45% → 36%) */
+              .radio-donut {
+                --hole: 36%;
+                appearance: none;
                 width: 21px;
+                height: 21px;
+                border-radius: 50%;
+                margin: 0;
+                padding: 0;
+
+                background-color: var(--gray, #d9d9d9);
+                /* 안쪽 흰 점 크기 = --hole, 경계 부드럽게 하려고 +1% */
+                background-image: radial-gradient(
+                  circle at 50% 50%,
+                  #fff 0 var(--hole),
+                  transparent calc(var(--hole) + 1%)
+                );
+                background-repeat: no-repeat;
+              }
+
+              .radio-donut:checked {
+                background-color: var(--brand, #8dd2ce);
+              }
+
+              .txt {
+                color: var(--Grey-grey-600, #585858);
+                text-align: center;
+                /* Medium/18px */
+                font-family: Pretendard;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%; /* 23.4px */
               }
             }
+            // label {
+            //   width: 130px;
+            //   display: flex;
+            //   align-items: center;
+            //   gap: 6px;
+            //   input {
+            //     width: 21px;
+            //   }
+            // }
           }
           .selectWrap {
             display: flex;
@@ -738,6 +787,7 @@
           text-align: center;
           font-size: 15px;
           font-weight: 600;
+          font-family: Pretendard;
           color: #222;
           background: #fff;
           transition: all 0.2s ease;
