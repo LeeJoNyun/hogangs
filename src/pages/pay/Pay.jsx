@@ -39,8 +39,7 @@ const Pay = () => {
   const { resType } = reservationForm;
 
   useEffect(() => {
-    console.log(reservationForm);
-    // if (!reservationForm) return;
+    if (!reservationForm) return;
     setLoading(false);
   }, [reservationForm]);
   return (
