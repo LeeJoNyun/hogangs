@@ -1,245 +1,246 @@
-@use './../utils' as *;
+@use "./../utils" as *;
 #grooming_price {
+  width: 100%;
+  height: 1907px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #fefefe;
+  .top_bg {
     width: 100%;
-    height: 1907px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .inner {
+    height: 1137px;
     display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    background-color: #fefefe;
-    .top_bg {
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-
-    .inner {
-        height: 1137px;
+    gap: 138px;
+    .top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .top_inner {
+        width: 1150px;
+        height: 607px;
         display: flex;
         flex-flow: column;
         align-items: center;
-        justify-content: center;
-        gap: 138px;
-        .top {
+        gap: 90px;
+        .title {
+          color: var(--Black, #060606);
+          font-family: Paperlogy;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: 4.8px;
+          .color {
+            color: var(--Green-green-800, #4a9f99);
+          }
+        }
+        .content {
+          width: 100%;
+          height: 460px;
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          gap: 94px;
+          .price_table {
+            width: 100%;
+            height: 343px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            .top_inner {
-                width: 1150px;
-                height: 607px;
+            gap: 40px;
+            position: relative;
+            .table {
+              width: 865px;
+              height: 302px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 34px;
+              .table_card {
+                width: 243px;
+                height: 302px;
                 display: flex;
                 flex-flow: column;
                 align-items: center;
-                gap: 90px;
-                .title {
-                    color: var(--Black, #060606);
+                gap: 46px;
+                .card_title {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 14px;
+                  i {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  }
+                  .cate {
+                    color: var(--Green-green-900, #478985);
                     font-family: Paperlogy;
-                    font-size: 48px;
+                    font-size: 26px;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
-                    letter-spacing: 4.8px;
-                    .color {
-                        color: var(--Green-green-800, #4a9f99);
-                    }
+                  }
                 }
-                .content {
-                    width: 100%;
-                    height: 460px;
+                .card_content {
+                  display: flex;
+                  flex-flow: column;
+                  justify-content: center;
+                  gap: 20px;
+                  .table_item {
                     display: flex;
-                    flex-flow: column;
-                    align-items: center;
-                    gap: 94px;
-                    .price_table {
-                        width: 100%;
-                        height: 343px;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        gap: 40px;
-                        position: relative;
-                        .table {
-                            width: 865px;
-                            height: 302px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            gap: 34px;
-                            .table_card {
-                                width: 243px;
-                                height: 302px;
-                                display: flex;
-                                flex-flow: column;
-                                align-items: center;
-                                gap: 46px;
-                                .card_title {
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    gap: 14px;
-                                    i {
-                                        width: 30px;
-                                        height: 30px;
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                    }
-                                    .cate {
-                                        color: var(--Green-green-900, #478985);
-                                        font-family: Paperlogy;
-                                        font-size: 26px;
-                                        font-style: normal;
-                                        font-weight: 600;
-                                        line-height: normal;
-                                    }
-                                }
-                                .card_content {
-                                    display: flex;
-                                    flex-flow: column;
-                                    justify-content: center;
-                                    gap: 20px;
-                                    .table_item {
-                                        display: flex;
-                                        gap: 61px;
-                                        .item_label {
-                                            width: 84px;
-                                            display: block;
-                                            color: var(--Grey-grey-900, #292929);
-                                            font-family: Pretendard;
-                                            font-size: 24px;
-                                            font-style: normal;
-                                            font-weight: 500;
-                                            line-height: normal;
-                                        }
-                                        .item_price {
-                                            display: block;
-                                            color: var(--Grey-grey-400, #818181);
-                                            font-family: Pretendard;
-                                            font-size: 22px;
-                                            font-style: normal;
-                                            font-weight: 500;
-                                            line-height: normal;
-                                            width: 93px;
-                                        }
-                                    }
-                                }
-                            }
-                            .table_line {
-                                width: 1px;
-                                height: 302px;
-                                border-right: 2px dotted #7abab6;
-                            }
-                        }
-                        .blank {
-                            width: 245px;
-                            height: 343px;
-                            background: url('/grooming/price/click_img.png') no-repeat center/cover;
-                        }
-                        .option_price {
-                            width: 370px;
-                            height: 550px;
-                            position: absolute;
-                            right: -100px;
-                            display: flex;
-                            flex-flow: column;
-                            gap: 12px;
-                            .option_title {
-                                display: flex;
-                                align-items: center;
-                                width: 300px;
-                                height: 43.828px;
-                                i {
-                                    width: 53.442px;
-                                    height: 43.828px;
-                                    flex-shrink: 0;
-                                    background: url('/grooming/price/hobok.png') no-repeat
-                                        center/contain;
-                                }
-                                display: flex;
-                                gap: 12px;
-                                span {
-                                    height: 16px;
-                                    color: var(--Grey-grey-800, #353535);
-                                    font-family: Paperlogy;
-                                    font-size: 14px;
-                                    font-style: normal;
-                                    font-weight: 500;
-                                    line-height: normal;
-                                }
-                            }
-                            .option_content {
-                                width: 100%;
-                                height: 498px;
-                                border-radius: 20px;
-                                background: #f6f6f6;
-                                background: url('/grooming/price/option.png') no-repeat
-                                    center/contain;
-                            }
-                        }
+                    gap: 61px;
+                    .item_label {
+                      width: 84px;
+                      display: block;
+                      color: var(--Grey-grey-900, #292929);
+                      font-family: Pretendard;
+                      font-size: 24px;
+                      font-style: normal;
+                      font-weight: 500;
+                      line-height: normal;
                     }
-                    .option {
-                        display: flex;
-                        align-items: center;
-                        gap: 18px;
-                        svg {
-                            display: block;
-                        }
-                        .label {
-                            display: block;
-                            color: #000;
-                            font-family: Pretendard;
-                            font-size: 18px;
-                            font-style: normal;
-                            font-weight: 500;
-                            line-height: 130%; /* 23.4px */
-                        }
-                        span {
-                            display: block;
-                            color: var(--Grey-grey-800, #353535);
-                            font-family: Pretendard;
-                            font-size: 18px;
-                            font-style: normal;
-                            font-weight: 500;
-                            line-height: 130%; /* 23.4px */
-                        }
+                    .item_price {
+                      display: block;
+                      color: var(--Grey-grey-400, #818181);
+                      font-family: Pretendard;
+                      font-size: 22px;
+                      font-style: normal;
+                      font-weight: 500;
+                      line-height: normal;
+                      width: 93px;
                     }
+                  }
                 }
+              }
+              .table_line {
+                width: 1px;
+                height: 302px;
+                border-right: 2px dotted #7abab6;
+              }
             }
+            .blank {
+              width: 245px;
+              height: 343px;
+              background: url("/grooming/price/click_img.png") no-repeat
+                center/cover;
+            }
+            .option_price {
+              width: 370px;
+              height: 550px;
+              position: absolute;
+              right: -170px;
+              display: flex;
+              flex-flow: column;
+              gap: 12px;
+              .option_title {
+                display: flex;
+                align-items: center;
+                width: 300px;
+                height: 43.828px;
+                i {
+                  width: 53.442px;
+                  height: 43.828px;
+                  flex-shrink: 0;
+                  background: url("/grooming/price/hobok.png") no-repeat
+                    center/contain;
+                }
+                display: flex;
+                gap: 12px;
+                span {
+                  height: 16px;
+                  color: var(--Grey-grey-800, #353535);
+                  font-family: Paperlogy;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                }
+              }
+              .option_content {
+                width: 100%;
+                height: 498px;
+                border-radius: 20px;
+                background: #f6f6f6;
+                background: url("/grooming/price/option.png") no-repeat
+                  center/contain;
+              }
+            }
+          }
+          .option {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            svg {
+              display: block;
+            }
+            .label {
+              display: block;
+              color: #000;
+              font-family: Pretendard;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 130%; /* 23.4px */
+            }
+            span {
+              display: block;
+              color: var(--Grey-grey-800, #353535);
+              font-family: Pretendard;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 130%; /* 23.4px */
+            }
+          }
         }
-        .bottom {
-            width: 100%;
-            height: 392px;
-            background: url('/grooming/price/note.png') no-repeat center/contain;
-        }
+      }
     }
+    .bottom {
+      width: 100%;
+      height: 392px;
+      background: url("/grooming/price/note.png") no-repeat center/contain;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
-    #grooming_price {
-        width: 390px;
-        height: 2467px;
-        background: url('/grooming/priceMobile.png') no-repeat center;
-        .top_bg {
-            display: none;
-        }
-        .inner {
-            width: 100%;
-            height: 1145px;
-            .top {
-                display: none;
-                .top_inner {
-                    width: 100%;
-                    height: 1145px;
-                    position: relative;
-                    .price_table {
-                        display: none;
-                    }
-                }
-            }
-            .bottom {
-                display: none;
-            }
-        }
+  #grooming_price {
+    width: 390px;
+    height: 2467px;
+    background: url("/grooming/priceMobile.png") no-repeat center;
+    .top_bg {
+      display: none;
     }
+    .inner {
+      width: 100%;
+      height: 1145px;
+      .top {
+        display: none;
+        .top_inner {
+          width: 100%;
+          height: 1145px;
+          position: relative;
+          .price_table {
+            display: none;
+          }
+        }
+      }
+      .bottom {
+        display: none;
+      }
+    }
+  }
 }
