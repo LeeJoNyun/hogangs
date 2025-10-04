@@ -1,194 +1,194 @@
 @property --r {
-  syntax: "<length>";
-  inherits: false;
-  initial-value: 0px;
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0px;
 }
 
 .landing-overlay {
-  --bubble-size: 560px;
-  --dog-size: calc(var(--bubble-size) * 1.02);
-  --bg: #8bbab7;
-  --cx: 50%;
-  --cy: 50%;
-  --r: 0px;
+    --bubble-size: 560px;
+    --dog-size: calc(var(--bubble-size) * 1.02);
+    --bg: #8bbab7;
+    --cx: 50%;
+    --cy: 50%;
+    --r: 0px;
 
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: var(--bg);
-  display: grid;
-  place-items: center;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: var(--bg);
+    display: grid;
+    place-items: center;
 
-  -webkit-mask: radial-gradient(
-    circle var(--r) at var(--cx) var(--cy),
-    transparent 0 var(--r),
-    #fff calc(var(--r) + 1px) 100%
-  );
-  mask: radial-gradient(
-    circle var(--r) at var(--cx) var(--cy),
-    transparent 0 var(--r),
-    #fff calc(var(--r) + 1px) 100%
-  );
-  transition: --r 1s ease-out;
+    -webkit-mask: radial-gradient(
+        circle var(--r) at var(--cx) var(--cy),
+        transparent 0 var(--r),
+        #fff calc(var(--r) + 1px) 100%
+    );
+    mask: radial-gradient(
+        circle var(--r) at var(--cx) var(--cy),
+        transparent 0 var(--r),
+        #fff calc(var(--r) + 1px) 100%
+    );
+    transition: --r 1s ease-out;
 }
 .landing-overlay.pop {
-  pointer-events: none;
+    pointer-events: none;
 }
 .landing-overlay.reveal {
-  --r: 160vmax;
+    --r: 160vmax;
 }
 
 /* 행진 라인 */
 .mung-content {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
 }
 .mung-content ul {
-  display: flex;
-  align-items: center;
-  gap: clamp(80px, 8vw, 120px);
-  height: 100%;
-  padding: 0 80px;
-  will-change: transform, opacity;
+    display: flex;
+    align-items: center;
+    gap: clamp(80px, 8vw, 120px);
+    height: 100%;
+    padding: 0 80px;
+    will-change: transform, opacity;
 }
 .mung-content li {
-  list-style: none;
+    list-style: none;
 }
 .mung-content .dog {
-  position: relative;
-  width: var(--dog-size);
-  aspect-ratio: 1/1;
-  display: grid;
-  place-items: center;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.25));
+    position: relative;
+    width: var(--dog-size);
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.25));
 }
 .mung-content .dog img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: opacity 0.25s linear, filter 0.25s linear, transform 0.25s;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.25s linear, filter 0.25s linear, transform 0.25s;
 }
 .mung-content .dog .variant {
-  opacity: 0;
+    opacity: 0;
 }
 /* '가장 가까운 1개'만 바뀜 */
 .mung-content li.in-bubble .dog img {
-  opacity: 0;
+    opacity: 0;
 }
 .mung-content li.in-bubble .dog .variant {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* 버블(인트로 끝날 때 페이드인) */
 .bubble-wrap {
-  width: var(--bubble-size);
-  height: var(--bubble-size);
-  position: relative;
-  z-index: 2;
-  background: transparent;
-  opacity: 0; /* JS가 1로 올림 */
-  .pop_text {
-    width: 150px;
-    height: 100px;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    background: url("/text.png") no-repeat center/cover;
-  }
+    width: var(--bubble-size);
+    height: var(--bubble-size);
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    opacity: 0; /* JS가 1로 올림 */
+    .pop_text {
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        background: url('/text.webp') no-repeat center/cover;
+    }
 }
 .bubble {
-  width: 100%;
-  height: 100%;
-  display: block;
-  cursor: pointer;
-  background: transparent;
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+    background: transparent;
 }
 
 /* 팝 파편 */
 .particles-container {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
 }
 .particles-container .bubble-particle {
-  position: absolute;
-  left: var(--origin-x);
-  top: var(--origin-y);
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.9);
-  transform: translate(-50%, -50%);
-  animation: burst 700ms ease-out forwards;
+    position: absolute;
+    left: var(--origin-x);
+    top: var(--origin-y);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    transform: translate(-50%, -50%);
+    animation: burst 700ms ease-out forwards;
 }
 @keyframes burst {
-  0% {
-    transform: translate(-50%, -50%) translate(0, 0) scale(1);
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate(-50%, -50%) translate(var(--x), var(--y)) scale(0.6);
-    opacity: 0;
-  }
+    0% {
+        transform: translate(-50%, -50%) translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) translate(var(--x), var(--y)) scale(0.6);
+        opacity: 0;
+    }
 }
 
 /* 반응형 */
 @media (max-width: 768px) {
-  .landing-overlay {
-    --bubble-size: 320px;
-    --dog-size: calc(var(--bubble-size) * 1.05);
-  }
+    .landing-overlay {
+        --bubble-size: 320px;
+        --dog-size: calc(var(--bubble-size) * 1.05);
+    }
 }
 
 /* 로고 기본은 숨김(인트로 끝나고 GSAP으로 페이드인) */
 .landing-logo {
-  position: absolute;
-  top: clamp(28px, 4.5vh, 60px);
-  left: 50%;
-  transform: translateX(-50%);
-  width: 475px;
-  height: 110px; /* 필요에 맞게 조절 */
-  background: url("/main/logo_text.png") no-repeat center/contain; /* 로고 소스 경로 */
-  opacity: 0; /* ✅ 처음엔 보이지 않음 */
-  pointer-events: none; /* 클릭 막기 */
-  z-index: 3;
+    position: absolute;
+    top: clamp(28px, 4.5vh, 60px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 475px;
+    height: 110px; /* 필요에 맞게 조절 */
+    background: url('/main/logo_text.webp') no-repeat center/contain; /* 로고 소스 경로 */
+    opacity: 0; /* ✅ 처음엔 보이지 않음 */
+    pointer-events: none; /* 클릭 막기 */
+    z-index: 3;
 }
 
 /* 프레임(고정) */
 .landing-shape {
-  position: absolute;
-  bottom: clamp(28px, 4.5vh, 60px);
-  left: 50%;
-  transform: translateX(-50%); /* 센터링은 프레임에만! */
-  width: 100%;
-  height: 64px; /* 원하는 높이 */
-  overflow: hidden;
-  opacity: 0; /* GSAP로 페이드인 */
-  z-index: 3;
+    position: absolute;
+    bottom: clamp(28px, 4.5vh, 60px);
+    left: 50%;
+    transform: translateX(-50%); /* 센터링은 프레임에만! */
+    width: 100%;
+    height: 64px; /* 원하는 높이 */
+    overflow: hidden;
+    opacity: 0; /* GSAP로 페이드인 */
+    z-index: 3;
 }
 
 /* 이동 대상 */
 .shape-track {
-  display: flex;
-  flex-wrap: nowrap;
-  will-change: transform;
+    display: flex;
+    flex-wrap: nowrap;
+    will-change: transform;
 }
 /* 각 패널은 화면 가로 100% */
 .shape-track > li {
-  flex: 0 0 100%;
-  width: 100%;
-  height: 100%;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
 }
 .bone {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

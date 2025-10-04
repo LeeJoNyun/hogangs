@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background-image: url('/about/Brand_Identity.png');
+    background-image: url('/about/Brand_Identity.webp');
     background-repeat: no-repeat;
     h2 {
         position: absolute;
@@ -158,7 +158,7 @@
         width: 100%;
         height: 78.9px;
         background-size: auto 78px;
-        background: url('/about/bone.png') repeat-x;
+        background: url('/about/bone.webp') repeat-x;
         animation: moveBanner 15s linear infinite;
         // bottom: 55px;
         top: 750px;
@@ -186,7 +186,7 @@
     #content3 {
         /* 390 기준 스케일러 */
         --m: calc(100vw / 390);
-        background-image: url('/about/Brand-Identity.png');
+        background-image: url('/about/Brand-Identity.webp');
 
         height: 100svh; /* 모바일 주소창 대응 */
         padding: calc(var(--m) * 24) calc(var(--m) * 20);

@@ -16,7 +16,7 @@ const Section5 = () => {
     const instaText1Ref = useRef(null);
     const instaText2Ref = useRef(null);
 
-    const images = Array.from({ length: 18 }, (_, i) => `/main/instaDog${i + 1}.png`);
+    const images = Array.from({ length: 18 }, (_, i) => `/main/instaDog${i + 1}.webp`);
 
     const isMobile = window.innerWidth <= 600;
 
@@ -189,7 +189,7 @@ const Section5 = () => {
                 <div ref={cardsWrapRef} className="cards-wrap">
                     <img
                         ref={instaDog1Ref}
-                        src={isMobile ? '/main/instaDogMobile.png' : '/main/instaDog9.png'}
+                        src={isMobile ? '/main/instaDogMobile.webp' : '/main/instaDog9.webp'}
                         alt="instaDog1"
                         className="insta-dog1"
                     />
@@ -200,7 +200,7 @@ const Section5 = () => {
 
                     <img
                         ref={instaDog2Ref}
-                        src="/main/instaDog10.png"
+                        src="/main/instaDog10.webp"
                         alt="instaDog2"
                         className="insta-dog2"
                     />

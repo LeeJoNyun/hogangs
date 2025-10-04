@@ -47,10 +47,10 @@ const Photo = () => {
                         사랑하는 반려견의 하루를 완벽하게 책임집니다.
                     </span>
                 </div>
-                <img src="/hotel/photo/1.png" alt="" className="img1" ref={img1Ref} />
-                <img src="/hotel/photo/2.png" alt="" className="img2" ref={img2Ref} />
-                <img src="/hotel/photo/3.png" alt="" className="img3" ref={img3Ref} />
-                <img src="/hotel/photo/4.png" alt="" className="img4" ref={img4Ref} />
+                <img src="/hotel/photo/1.webp" alt="" className="img1" ref={img1Ref} />
+                <img src="/hotel/photo/2.webp" alt="" className="img2" ref={img2Ref} />
+                <img src="/hotel/photo/3.webp" alt="" className="img3" ref={img3Ref} />
+                <img src="/hotel/photo/4.webp" alt="" className="img4" ref={img4Ref} />
             </div>
 
             {/* text marquee */}

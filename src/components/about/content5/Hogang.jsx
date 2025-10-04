@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 const IMAGES = [
-    '/about/Hogang1.png',
-    '/about/Hogang2.png',
-    '/about/Hogang3.png',
-    '/about/Hogang4.png',
+    '/about/Hogang1.webp',
+    '/about/Hogang2.webp',
+    '/about/Hogang3.webp',
+    '/about/Hogang4.webp',
 ];
 
 const Hogang = () => {
@@ -32,7 +32,7 @@ const Hogang = () => {
             <div className="about">
                 <div className="name">
                     <h2>호강이</h2>
-                    <img src="/about/Line.png" alt="" />
+                    <img src="/about/Line.webp" alt="" />
                 </div>
                 <div className="section">
                     <div className="title">

@@ -179,7 +179,7 @@ const Review = ({ videoId }) => {
                         ))}
                     </div>
                     <div className="bar">
-                        <img src="/ott/bar.png" alt="" />
+                        <img src="/ott/bar.webp" alt="" />
                     </div>
                 </div>
 
@@ -206,7 +206,7 @@ const Review = ({ videoId }) => {
                     <strong>리뷰 ({sorted.length})</strong>
                     <div className="like-filter">
                         <p onClick={handleSortToggle}>{getSortText()}</p>
-                        <img src="/ott/icon-filter.png" alt="정렬" />
+                        <img src="/ott/icon-filter.webp" alt="정렬" />
                     </div>
 
                     {loading ? (
@@ -273,7 +273,7 @@ const Review = ({ videoId }) => {
                             onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
                             disabled={currentPage === 1}
                         >
-                            <img src="/ott/icon-prev.png" alt="이전" />
+                            <img src="/ott/icon-prev.webp" alt="이전" />
                             <span>이전</span>
                         </button>
                         {Array.from({ length: totalPage }, (_, i) => (
@@ -290,7 +290,7 @@ const Review = ({ videoId }) => {
                             disabled={currentPage === totalPage}
                         >
                             <span>다음</span>
-                            <img src="/ott/icon-next.png" alt="다음" />
+                            <img src="/ott/icon-next.webp" alt="다음" />
                         </button>
                     </div>
                 </div>

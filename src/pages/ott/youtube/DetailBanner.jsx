@@ -40,9 +40,9 @@ const DetailBanner = () => {
             <div className="line"></div>
             <div className="desc-box">
                 <div className="left" ref={thumbRef}>
-                    <img src="/ott/detail-sub2.png" alt="4가지기본훈련이미지" />
+                    <img src="/ott/detail-sub2.webp" alt="4가지기본훈련이미지" />
                     <button onClick={play}>
-                        <img src="/ott/play-button.png" alt="플레이버튼" />
+                        <img src="/ott/play-button.webp" alt="플레이버튼" />
                     </button>
                 </div>
                 <div className="center">
@@ -75,7 +75,7 @@ const DetailBanner = () => {
                     </ul>
                 </div>
                 {/* <div className="right">
-                    <img src="/ott/score.png" alt="별점" />
+                    <img src="/ott/score.webp" alt="별점" />
                 </div> */}
             </div>
             {isOpen && (

@@ -9,35 +9,35 @@ const Best = () => {
     const best5 = [
         {
             id: 1,
-            img: '/ott/movie3.png',
+            img: '/ott/movie3.webp',
             title: '도그',
             desc: '말썽꾸러기 도그와 함께 떠나는 \n 엉뚱하고 따뜻한 힐링 로드트립',
             date: '2022',
         },
         {
             id: 2,
-            img: '/ott/movie9.png',
+            img: '/ott/movie9.webp',
             title: '더 웨이 홈',
             desc: '집으로 돌아가기 위한 강아지의 \n 감동 여정을 담은 이야기',
             date: '2019',
         },
         {
             id: 3,
-            img: '/ott/movie1.png',
+            img: '/ott/movie1.webp',
             title: '안녕 베일리',
             desc: '환생을 통해 반려인 곁을 지키는 \n충직하고 사랑스러운 강아지 이야기',
             date: '2019',
         },
         {
             id: 4,
-            img: '/ott/movie7.png',
+            img: '/ott/movie7.webp',
             title: '볼트',
             desc: '슈퍼히어로라 믿던 강아지 볼트가 \n 모험을 통해 진짜 용기를 찾아가는 이야기',
             date: '2008',
         },
         {
             id: 5,
-            img: '/ott/movie5.png',
+            img: '/ott/movie5.webp',
             title: '말리와 나',
             desc: '천방지축 강아지 말리와 함께 \n 유쾌하고 사랑스러운 가족 이야기',
             date: '2008',
@@ -143,7 +143,7 @@ const Best = () => {
                                 >
                                     <p>지금보러가기</p>
                                     <p>
-                                        <img src="/ott/icon-paw.png" alt="지금보러가기" />
+                                        <img src="/ott/icon-paw.webp" alt="지금보러가기" />
                                     </p>
                                 </div>
                             </div>

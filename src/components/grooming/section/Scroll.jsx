@@ -13,11 +13,11 @@ const SIZES = [
     { w: 1920, h: 560 },
 ];
 const IMAGES = [
-    '/grooming/scroll/1.png',
-    '/grooming/scroll/2.png',
-    '/grooming/scroll/3.png',
-    '/grooming/scroll/4.png',
-    '/grooming/scroll/5.png',
+    '/grooming/scroll/1.webp',
+    '/grooming/scroll/2.webp',
+    '/grooming/scroll/3.webp',
+    '/grooming/scroll/4.webp',
+    '/grooming/scroll/5.webp',
 ];
 
 const MILESTONES = [

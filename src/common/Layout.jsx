@@ -33,7 +33,7 @@ const Layout = () => {
                 {/* footer 버튼 1 */}
                 <div className="footer-buttons1" aria-label="quick buttons">
                     <img
-                        src={hover1 ? '/footer/Hotel.png' : '/footer/Hotel-1.png'}
+                        src={hover1 ? '/footer/Hotel.webp' : '/footer/Hotel-1.webp'}
                         alt="호텔 버튼"
                         onClick={() => navigate('/Hotel')}
                         onMouseEnter={() => setHover1(true)}
@@ -41,7 +41,7 @@ const Layout = () => {
                         style={{ cursor: 'pointer' }}
                     />
                     <img
-                        src={hover2 ? '/footer/Grooming.png' : '/footer/Grooming-1.png'}
+                        src={hover2 ? '/footer/Grooming.webp' : '/footer/Grooming-1.webp'}
                         alt="그루밍 버튼"
                         onClick={() => navigate('/Grooming')}
                         onMouseEnter={() => setHover2(true)}
@@ -51,8 +51,8 @@ const Layout = () => {
                     <img
                         src={
                             hover3
-                                ? '/footer/Reservation-Button-2.png'
-                                : '/footer/Reservation-Button-1.png'
+                                ? '/footer/Reservation-Button-2.webp'
+                                : '/footer/Reservation-Button-1.webp'
                         }
                         alt="예약 버튼"
                         onClick={() => navigate('/Reservation')}
@@ -65,7 +65,7 @@ const Layout = () => {
                 {/* footer 버튼 2 */}
                 <div className="footer-buttons2" aria-label="quick buttons">
                     <img
-                        src={hover4 ? '/footer/button2-hover.png' : '/footer/button2.png'}
+                        src={hover4 ? '/footer/button2-hover.webp' : '/footer/button2.webp'}
                         alt="맨위로 버튼"
                         onClick={handleScrollTop}
                         onMouseEnter={() => setHover4(true)}

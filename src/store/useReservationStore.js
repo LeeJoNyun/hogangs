@@ -92,7 +92,7 @@ const useReservationStore = create((set, get) => ({
         try {
             if (typeof window !== 'undefined') {
                 const raw = localStorage.getItem('reservationForm');
-                if (raw) set({ form: JSON.parse(raw) });
+                if (raw) set({ reservationForm: JSON.parse(raw) });
             }
         } catch (e) {
             console.error('localStorage load error:', e);
@@ -171,7 +171,9 @@ const useReservationStore = create((set, get) => ({
         };
         // coupon 사용
         if (selectedCouponId) {
-            await axios.patch(`${API_URL.replace(/\/+$/, '')}/user-coupons/${selectedCouponId}/use`);
+            await axios.patch(
+                `${API_URL.replace(/\/+$/, '')}/user-coupons/${selectedCouponId}/use`
+            );
         }
         const res = await axios.post(`${API_URL.replace(/\/+$/, '')}/reservation`, payload, {
             headers: { 'Content-Type': 'application/json' },
@@ -185,7 +187,6 @@ const useReservationStore = create((set, get) => ({
     },
 
     cancelReservation: async (resId, couponId) => {
-
         const { res } = await axios.patch(
             `${API_URL.replace(/\/+$/, '')}/reservation/${resId}/cancel`,
             {

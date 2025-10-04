@@ -5,7 +5,7 @@ const Content4 = () => {
         <section id="content4">
             <div className="item item1">
                 <img
-                    src="/about/BrandStory-image01.png"
+                    src="/about/BrandStory-image01.webp"
                     alt=""
                     data-aos="zoom-in"
                     data-aos-duration="2000"
@@ -23,7 +23,7 @@ const Content4 = () => {
 
             <div className="item item2">
                 <img
-                    src="/about/BrandStory-image02.png"
+                    src="/about/BrandStory-image02.webp"
                     alt=""
                     data-aos="zoom-in"
                     data-aos-duration="2000"
@@ -41,7 +41,7 @@ const Content4 = () => {
 
             <div className="item item3">
                 <img
-                    src="/about/BrandStory-image03.png"
+                    src="/about/BrandStory-image03.webp"
                     alt=""
                     data-aos="zoom-in"
                     data-aos-duration="2000"

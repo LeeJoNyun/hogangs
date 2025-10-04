@@ -16,9 +16,9 @@ const PriceModal = ({ hotel, onClose }) => {
 
     useEffect(() => {
         if (hotel) {
-            setSrc('/reservation/hotel_price.png');
+            setSrc('/reservation/hotel_price.webp');
         } else {
-            setSrc('/reservation/grooming_price.png');
+            setSrc('/reservation/grooming_price.webp');
         }
     }, [hotel]);
     return (

@@ -4,7 +4,7 @@ const SteamingItem = () => {
     return (
         <div className="SteamingItem" id="SteamingItem">
             <div className="movieImg">
-                <img src="/mypage/ottImg.png" alt="" />
+                <img src="/mypage/ottImg.webp" alt="" />
             </div>
             <div className="title">
                 <p>영화 제목</p>

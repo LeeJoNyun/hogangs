@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-const IMAGES = ['/about/Hobok1.png', '/about/Hobok2.png', '/about/Hobok3.png', '/about/Hobok4.png'];
+const IMAGES = [
+    '/about/Hobok1.webp',
+    '/about/Hobok2.webp',
+    '/about/Hobok3.webp',
+    '/about/Hobok4.webp',
+];
 
 const Hobok = () => {
     const [current, setCurrent] = useState(0);
@@ -28,7 +33,7 @@ const Hobok = () => {
             <div className="about">
                 <div className="name">
                     <h2>호복이</h2>
-                    <img src="/about/Line.png" alt="" />
+                    <img src="/about/Line.webp" alt="" />
                 </div>
                 <div className="section">
                     <div className="title">

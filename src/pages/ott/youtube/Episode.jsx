@@ -40,7 +40,7 @@ const Episode = ({ videos }) => {
                     onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
                     disabled={currentPage === 1}
                 >
-                    <img src="/ott/icon-prev.png" alt="이전버튼" />
+                    <img src="/ott/icon-prev.webp" alt="이전버튼" />
                     <span>이전</span>
                 </button>
                 {Array.from({ length: totalPage }, (_, i) => (
@@ -57,7 +57,7 @@ const Episode = ({ videos }) => {
                     disabled={currentPage === totalPage}
                 >
                     <span>다음</span>
-                    <img src="/ott/icon-next.png" alt="다음버튼" />
+                    <img src="/ott/icon-next.webp" alt="다음버튼" />
                 </button>
             </div>
         </div>

@@ -11,7 +11,7 @@ const HotelReservation = ({ data }) => {
     return (
         <div id="hotelReservationBox" className={status === 0 ? 'past' : 'upcoming'}>
             <div className="left">
-                <img src="/mypage/hotelDog.png" alt="hotelDog" />
+                <img src="/mypage/hotelDog.webp" alt="hotelDog" />
             </div>
             <div className="right">
                 <p>호텔예약완료</p>

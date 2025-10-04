@@ -92,7 +92,7 @@ const HotelIntroduceSwiper = () => {
                             <div className="title">{card.badge}</div>
                             <strong>{card.title}</strong>
                         </div>
-                        <img src={`/hotel/introduce/${idx + 1}.png`} alt="" className="img" />
+                        <img src={`/hotel/introduce/${idx + 1}.webp`} alt="" className="img" />
                         <div className="bottom">
                             <p>
                                 {card.t1}

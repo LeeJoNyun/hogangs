@@ -1,680 +1,680 @@
 select {
-  -o-appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: relative;
-  padding-right: 36px;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    padding-right: 36px;
 }
 
 #pay_step1 {
-  width: 100%;
-  padding: 160px 260px 60px 260px;
-  background-color: #fff;
-  .inner {
-    display: flex;
-    justify-content: space-between;
-    .pay_left {
-      width: 961px;
-      display: flex;
-      flex-flow: column;
-      // gap: 120px;
-      .title {
-        color: var(--Black, #060606);
-
-        /* SemiBold/24px */
-        font-family: Pretendard;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        margin-bottom: 30px;
-      }
-      .pay_goods {
-        width: 100%;
-        padding: 44px 49px 45px 48px;
-        border-radius: 20px;
-        border: 1px solid var(--Grey-grey-100, #cecece);
-        background: #fff;
-        margin-bottom: 120px;
-        .goods_inner {
-          width: 864px;
-          display: flex;
-          flex-flow: column;
-          gap: 30px;
-          .goods_label {
-            color: var(--Black, #060606);
-            font-family: Paperlogy;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            letter-spacing: 0.24px;
-          }
-          .goods_line {
-            width: 100%;
-            height: 1px;
-            background: #b6b6b6;
-          }
-          .goods_context {
+    width: 100%;
+    padding: 160px 260px 60px 260px;
+    background-color: #fff;
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        .pay_left {
+            width: 961px;
             display: flex;
             flex-flow: column;
-            gap: 10px;
-            .b500 {
-              color: var(--Grey-grey-900, #292929);
+            // gap: 120px;
+            .title {
+                color: var(--Black, #060606);
 
-              /* Medium/18px */
-              font-family: Pretendard;
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 130%; /* 23.4px */
+                /* SemiBold/24px */
+                font-family: Pretendard;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 30px;
             }
-            .g500 {
-              color: var(--Grey-grey-400, #818181);
+            .pay_goods {
+                width: 100%;
+                padding: 44px 49px 45px 48px;
+                border-radius: 20px;
+                border: 1px solid var(--Grey-grey-100, #cecece);
+                background: #fff;
+                margin-bottom: 120px;
+                .goods_inner {
+                    width: 864px;
+                    display: flex;
+                    flex-flow: column;
+                    gap: 30px;
+                    .goods_label {
+                        color: var(--Black, #060606);
+                        font-family: Paperlogy;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: 0.24px;
+                    }
+                    .goods_line {
+                        width: 100%;
+                        height: 1px;
+                        background: #b6b6b6;
+                    }
+                    .goods_context {
+                        display: flex;
+                        flex-flow: column;
+                        gap: 10px;
+                        .b500 {
+                            color: var(--Grey-grey-900, #292929);
 
-              /* Medium/18px */
-              font-family: Pretendard;
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 130%; /* 23.4px */
-            }
-            .goods_price {
-              margin-top: 19px;
-              color: var(--Grey-grey-900, #515151);
+                            /* Medium/18px */
+                            font-family: Pretendard;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 130%; /* 23.4px */
+                        }
+                        .g500 {
+                            color: var(--Grey-grey-400, #818181);
 
-              /* Medium/18px */
-              font-family: Pretendard;
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 130%; /* 23.4px */
+                            /* Medium/18px */
+                            font-family: Pretendard;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 130%; /* 23.4px */
+                        }
+                        .goods_price {
+                            margin-top: 19px;
+                            color: var(--Grey-grey-900, #515151);
+
+                            /* Medium/18px */
+                            font-family: Pretendard;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 130%; /* 23.4px */
+                        }
+                    }
+                }
             }
-          }
+            .pay_user {
+                background-color: #fff;
+                width: 961px;
+                height: 427px;
+                display: flex;
+                flex-flow: column;
+                .user_label {
+                    color: var(--Black, #060606);
+                    font-family: Paperlogy;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: 0.24px;
+                    margin-bottom: 30px;
+                }
+                .user_line {
+                    width: 100%;
+                    height: 1px;
+                    background: #b6b6b6;
+                    margin-bottom: 26px;
+                }
+                .user_text {
+                    color: var(--Grey-grey-500, #616161);
+                    /* Regular/16px */
+                    font-family: Pretendard;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom: 40px;
+                }
+                .user_info_area {
+                    display: flex;
+                    flex-flow: column;
+                    gap: 17px;
+                    width: 607px;
+                    margin-bottom: 30px;
+                    li {
+                        width: 100%;
+                        height: 36px;
+                        display: flex;
+                        align-items: center;
+                        gap: 61px;
+                        .info_label {
+                            display: flex;
+                            align-items: center;
+                            width: 63px;
+                            height: 100%;
+                            color: #292929;
+                            font-family: Pretendard;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 130%; /* 23.4px */
+                        }
+                        input[type='text'] {
+                            width: 137px;
+                            height: 36px;
+                            border-radius: 10px;
+                            border: 1px solid var(--Grey-grey-200, #b6b6b6);
+                            background: var(--White, #fefefe);
+                            outline: none;
+                            padding-left: 10px;
+                        }
+                        .phone {
+                            display: flex;
+                            gap: 11px;
+                            align-items: center;
+                            .telFirst {
+                                width: 137px;
+                                height: 36px;
+                                border-radius: 10px;
+                                border: 1px solid var(--Grey-grey-200, #b6b6b6);
+                                background: var(--White, #fefefe);
+                                outline: none;
+                                padding-left: 10px;
+                                background: url('/arrow_down.webp') no-repeat right 10px center;
+                            }
+                            .phone_arrow {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 24px;
+                                height: 24px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                z-index: 2;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .email {
+                            display: flex;
+                            align-items: center;
+                            gap: 4px;
+                            .emailList {
+                                width: 160px;
+                                height: 36px;
+                                border-radius: 10px;
+                                border: 1px solid var(--Grey-grey-200, #b6b6b6);
+                                background: var(--White, #fefefe);
+                                outline: none;
+                                padding-left: 10px;
+                                background: url('/arrow_down.webp') no-repeat right 10px center;
+                            }
+                        }
+                        .request_list {
+                            width: 300px;
+                            height: 36px;
+                            padding-left: 10px;
+                            border-radius: 10px;
+                            border: 1px solid var(--Grey-grey-200, #b6b6b6);
+                            background: url('/arrow_down.webp') no-repeat right 10px center;
+                            outline: none;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+                .check__line input[type='checkbox'] {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    padding: 0;
+                    margin: -1px;
+                    overflow: hidden;
+                    clip: rect(0, 0, 0, 0);
+                    border: 0;
+                }
+                .check__line input[type='checkbox'] + label {
+                    display: inline-block;
+                    position: relative;
+                    padding-left: 37px;
+                    cursor: pointer;
+                }
+                .check__line input[type='checkbox'] + label:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 3px;
+                    width: 15px;
+                    height: 15px;
+                    text-align: center;
+                    background: #8dd2ce;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                }
+
+                .check__line label.checked::after {
+                    content: '';
+                    position: absolute;
+                    top: 3px;
+                    left: 1px;
+                    width: 12px;
+                    height: 12px;
+                    background: url('/Vector.webp') no-repeat;
+                    background-position: center center;
+                    border-radius: 5px;
+                }
+
+                .check__line input[type='checkbox'] + label span {
+                    color: var(--Grey-grey-500, #616161);
+                    font-family: Pretendard;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 130%; /* 20.8px */
+                }
+            }
         }
-      }
-      .pay_user {
-        background-color: #fff;
-        width: 961px;
-        height: 427px;
-        display: flex;
-        flex-flow: column;
-        .user_label {
-          color: var(--Black, #060606);
-          font-family: Paperlogy;
-          font-size: 24px;
-          font-style: normal;
-          font-weight: 600;
-          line-height: normal;
-          letter-spacing: 0.24px;
-          margin-bottom: 30px;
-        }
-        .user_line {
-          width: 100%;
-          height: 1px;
-          background: #b6b6b6;
-          margin-bottom: 26px;
-        }
-        .user_text {
-          color: var(--Grey-grey-500, #616161);
-          /* Regular/16px */
-          font-family: Pretendard;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          margin-bottom: 40px;
-        }
-        .user_info_area {
-          display: flex;
-          flex-flow: column;
-          gap: 17px;
-          width: 607px;
-          margin-bottom: 30px;
-          li {
-            width: 100%;
-            height: 36px;
+        .pay_right {
+            position: fixed;
+            right: 118px;
+            bottom: 144px;
+            width: 420px;
             display: flex;
-            align-items: center;
-            gap: 61px;
-            .info_label {
-              display: flex;
-              align-items: center;
-              width: 63px;
-              height: 100%;
-              color: #292929;
-              font-family: Pretendard;
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 130%; /* 23.4px */
+            flex-flow: column;
+            gap: 40px;
+            z-index: 10;
+            .receipt {
+                width: 100%;
+                padding: 53px 30px 52px 30px;
+                border-radius: 20px;
+                border: 1px solid #cecece;
+                z-index: 2;
+                .receipt_inner {
+                    width: 360px;
+                    display: flex;
+                    flex-flow: column;
+                    gap: 34px;
+                    .receipt_title {
+                        color: var(--Black, #060606);
+                        font-family: Pretendard;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                    .receipt_info {
+                        width: 328px;
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        gap: 14px;
+                        li {
+                            padding-left: 10px;
+                            width: 100%;
+                            height: 21px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .receipt_label {
+                                color: var(--Grey-grey-400, #818181);
+                                font-family: Pretendard;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 130%; /* 23.4px */
+                            }
+                            .receipt_price {
+                                color: #515151;
+                                /* Medium/18px */
+                                font-family: Pretendard;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 130%; /* 23.4px */
+                            }
+                        }
+                    }
+                    .receipt_line {
+                        width: 100%;
+                        height: 1px;
+                        background: #cecece;
+                    }
+
+                    .receipt_total {
+                        width: 100%;
+                        padding: 0 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .receipt_total_text {
+                            color: var(--Black, #060606);
+
+                            /* Medium/18px */
+                            font-family: Pretendard;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 130%; /* 23.4px */
+                        }
+                    }
+                }
             }
-            input[type="text"] {
-              width: 137px;
-              height: 36px;
-              border-radius: 10px;
-              border: 1px solid var(--Grey-grey-200, #b6b6b6);
-              background: var(--White, #fefefe);
-              outline: none;
-              padding-left: 10px;
-            }
-            .phone {
-              display: flex;
-              gap: 11px;
-              align-items: center;
-              .telFirst {
-                width: 137px;
-                height: 36px;
-                border-radius: 10px;
-                border: 1px solid var(--Grey-grey-200, #b6b6b6);
-                background: var(--White, #fefefe);
-                outline: none;
-                padding-left: 10px;
-                background: url("/arrow_down.png") no-repeat right 10px center;
-              }
-              .phone_arrow {
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 24px;
-                height: 24px;
+
+            .pay_agree {
+                width: 100%;
+                // height: 268px;
+                height: 145px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                z-index: 2;
-                img {
-                  width: 100%;
-                  height: 100%;
-                }
-              }
-            }
-            .email {
-              display: flex;
-              align-items: center;
-              gap: 4px;
-              .emailList {
-                width: 160px;
-                height: 36px;
-                border-radius: 10px;
-                border: 1px solid var(--Grey-grey-200, #b6b6b6);
+                border-radius: 20px;
+                border: 1px solid var(--Grey-grey-100, #cecece);
                 background: var(--White, #fefefe);
-                outline: none;
-                padding-left: 10px;
-                background: url("/arrow_down.png") no-repeat right 10px center;
-              }
-            }
-            .request_list {
-              width: 300px;
-              height: 36px;
-              padding-left: 10px;
-              border-radius: 10px;
-              border: 1px solid var(--Grey-grey-200, #b6b6b6);
-              background: url("/arrow_down.png") no-repeat right 10px center;
-              outline: none;
-              padding-left: 10px;
-            }
-          }
-        }
-        .check__line input[type="checkbox"] {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          padding: 0;
-          margin: -1px;
-          overflow: hidden;
-          clip: rect(0, 0, 0, 0);
-          border: 0;
-        }
-        .check__line input[type="checkbox"] + label {
-          display: inline-block;
-          position: relative;
-          padding-left: 37px;
-          cursor: pointer;
-        }
-        .check__line input[type="checkbox"] + label:before {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 3px;
-          width: 15px;
-          height: 15px;
-          text-align: center;
-          background: #8dd2ce;
-          box-sizing: border-box;
-          border-radius: 5px;
-        }
+                .pay_agree_inner {
+                    width: 362px;
+                    // height: 202px;
+                    height: 97px;
+                    display: flex;
+                    flex-flow: column;
+                    gap: 29px;
+                    .check__line input[type='checkbox'] {
+                        position: absolute;
+                        width: 1px;
+                        height: 1px;
+                        padding: 0;
+                        margin: -1px;
+                        overflow: hidden;
+                        clip: rect(0, 0, 0, 0);
+                        border: 0;
+                    }
+                    .check__line input[type='checkbox'] + label {
+                        display: inline-block;
+                        position: relative;
+                        padding-left: 37px;
+                        cursor: pointer;
+                    }
+                    .check__line input[type='checkbox'] + label:before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 3px;
+                        width: 18px;
+                        height: 18px;
+                        text-align: center;
+                        background: #8dd2ce;
+                        background: #b6b6b6;
 
-        .check__line label.checked::after {
-          content: "";
-          position: absolute;
-          top: 3px;
-          left: 1px;
-          width: 12px;
-          height: 12px;
-          background: url("/Vector.png") no-repeat;
-          background-position: center center;
-          border-radius: 5px;
-        }
+                        box-sizing: border-box;
+                        border-radius: 5px;
+                    }
+                    .check__line.inputCheck input[type='checkbox'] + label::before {
+                        background: #8dd2ce;
+                    }
+                    .check__line label.checked::after {
+                        content: '';
+                        position: absolute;
+                        top: 3px;
+                        left: 1px;
+                        width: 15px;
+                        height: 15px;
+                        background: url('/Vector.webp') no-repeat;
+                        background-position: center center;
+                        border-radius: 5px;
+                    }
 
-        .check__line input[type="checkbox"] + label span {
-          color: var(--Grey-grey-500, #616161);
-          font-family: Pretendard;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 130%; /* 20.8px */
-        }
-      }
-    }
-    .pay_right {
-      position: fixed;
-      right: 118px;
-      bottom: 144px;
-      width: 420px;
-      display: flex;
-      flex-flow: column;
-      gap: 40px;
-      z-index: 10;
-      .receipt {
-        width: 100%;
-        padding: 53px 30px 52px 30px;
-        border-radius: 20px;
-        border: 1px solid #cecece;
-        z-index: 2;
-        .receipt_inner {
-          width: 360px;
-          display: flex;
-          flex-flow: column;
-          gap: 34px;
-          .receipt_title {
-            color: var(--Black, #060606);
-            font-family: Pretendard;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-          }
-          .receipt_info {
-            width: 328px;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            gap: 14px;
-            li {
-              padding-left: 10px;
-              width: 100%;
-              height: 21px;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              .receipt_label {
-                color: var(--Grey-grey-400, #818181);
-                font-family: Pretendard;
-                font-size: 18px;
+                    .check__line input[type='checkbox'] + label span {
+                        color: var(--Black, #060606);
+                        font-family: Pretendard;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                    .text_area {
+                        p {
+                            color: var(--Grey-grey-600, #585858);
+
+                            /* Regular/14px */
+                            font-family: Pretendard;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 150%; /* 21px */
+                            &.last {
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .btn_payment {
+                width: 100%;
+                height: 50px;
+                cursor: pointer;
+                border-radius: 56px;
+                background: var(--Grey-grey-200, #b6b6b6);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--White, #fff);
+                font-family: Paperlogy;
+                font-size: 14px;
                 font-style: normal;
-                font-weight: 500;
-                line-height: 130%; /* 23.4px */
-              }
-              .receipt_price {
-                color: #515151;
-                /* Medium/18px */
-                font-family: Pretendard;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 130%; /* 23.4px */
-              }
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 0.42px;
+                &.enable {
+                    background: #8dd2ce;
+                }
             }
-          }
-          .receipt_line {
-            width: 100%;
-            height: 1px;
-            background: #cecece;
-          }
-
-          .receipt_total {
-            width: 100%;
-            padding: 0 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .receipt_total_text {
-              color: var(--Black, #060606);
-
-              /* Medium/18px */
-              font-family: Pretendard;
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 130%; /* 23.4px */
-            }
-          }
         }
-      }
-
-      .pay_agree {
-        width: 100%;
-        // height: 268px;
-        height: 145px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 20px;
-        border: 1px solid var(--Grey-grey-100, #cecece);
-        background: var(--White, #fefefe);
-        .pay_agree_inner {
-          width: 362px;
-          // height: 202px;
-          height: 97px;
-          display: flex;
-          flex-flow: column;
-          gap: 29px;
-          .check__line input[type="checkbox"] {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            border: 0;
-          }
-          .check__line input[type="checkbox"] + label {
-            display: inline-block;
-            position: relative;
-            padding-left: 37px;
-            cursor: pointer;
-          }
-          .check__line input[type="checkbox"] + label:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 3px;
-            width: 18px;
-            height: 18px;
-            text-align: center;
-            background: #8dd2ce;
-            background: #b6b6b6;
-
-            box-sizing: border-box;
-            border-radius: 5px;
-          }
-          .check__line.inputCheck input[type="checkbox"] + label::before {
-            background: #8dd2ce;
-          }
-          .check__line label.checked::after {
-            content: "";
-            position: absolute;
-            top: 3px;
-            left: 1px;
-            width: 15px;
-            height: 15px;
-            background: url("/Vector.png") no-repeat;
-            background-position: center center;
-            border-radius: 5px;
-          }
-
-          .check__line input[type="checkbox"] + label span {
-            color: var(--Black, #060606);
-            font-family: Pretendard;
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-          }
-          .text_area {
-            p {
-              color: var(--Grey-grey-600, #585858);
-
-              /* Regular/14px */
-              font-family: Pretendard;
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 150%; /* 21px */
-              &.last {
-                padding-left: 10px;
-              }
-            }
-          }
-        }
-      }
-
-      .btn_payment {
-        width: 100%;
-        height: 50px;
-        cursor: pointer;
-        border-radius: 56px;
-        background: var(--Grey-grey-200, #b6b6b6);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--White, #fff);
-        font-family: Paperlogy;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        letter-spacing: 0.42px;
-        &.enable {
-          background: #8dd2ce;
-        }
-      }
     }
-  }
 }
 @media screen and (max-width: 600px) {
-  #pay_step1 {
-    width: 100%;
-    padding: 0px;
-    padding: 60px 16px;
-
-    .inner {
-      width: 100%;
-      .pay_left {
-        .pay_goods {
-          width: 100%;
-          padding: 23px 25px;
-          margin-top: 80px;
-          .goods_inner {
-            width: 100%;
-            gap: 16px;
-            .goods_label {
-              font-size: 18px;
-            }
-            .goods_line {
-              width: 100%;
-            }
-            .goods_context {
-              gap: 10px;
-              .b500 {
-                font-size: 14px;
-              }
-              .g500 {
-                font-size: 14px;
-              }
-              .goods_price {
-                font-size: 16px;
-                font-weight: 500;
-              }
-            }
-          }
-        }
-        .pay_user {
-          width: 100%;
-          height: 290px;
-          .user_label {
-            font-size: 18px;
-            margin-bottom: 12px;
-          }
-          .user_text {
-            font-size: 13px;
-          }
-          .user_info_area {
-            width: 100%;
-            gap: 3px;
-            margin-bottom: 30px;
-            li {
-              width: 100%;
-              height: 36px;
-              display: flex;
-              align-items: center;
-              gap: 61px;
-
-              .info_label {
-                width: 63px;
-                font-size: 14px;
-              }
-              input[type="text"] {
-                width: 90%;
-                height: 34px;
-                font-size: 11px;
-                &:nth-child(5) {
-                  width: 70px;
-                }
-              }
-              .phone {
-                font-size: 12px;
-                gap: 0px;
-                span {
-                  opacity: 0;
-                }
-                .telFirst {
-                  padding-left: 10px;
-                  width: 70px;
-                  height: 34px;
-                }
-                .phone_arrow {
-                  width: 24px;
-                  height: 24px;
-                  img {
-                    width: 100%;
-                    height: 100%;
-                  }
-                }
-              }
-
-              .email {
-                span {
-                  font-size: 12px;
-                }
-                .emailList {
-                  width: 160px;
-                  height: 36px;
-                  border-radius: 10px;
-                  border: 1px solid var(--Grey-grey-200, #b6b6b6);
-                  background: var(--White, #fefefe);
-                  outline: none;
-                  padding-left: 10px;
-                  background: url("/arrow_down.png") no-repeat right 10px center;
-                }
-              }
-              .request_list {
-                width: 300px;
-                height: 36px;
-                padding-left: 10px;
-                border-radius: 10px;
-                border: 1px solid var(--Grey-grey-200, #b6b6b6);
-                background: url("/arrow_down.png") no-repeat right 10px center;
-                outline: none;
-                padding-left: 10px;
-              }
-            }
-          }
-
-          .check__line input[type="checkbox"] + label {
-            padding-left: 37px;
-          }
-          .check__line input[type="checkbox"] + label:before {
-            top: 5px;
-            width: 15px;
-            height: 15px;
-          }
-
-          .check__line label.checked::after {
-            top: 3px;
-          }
-
-          .check__line input[type="checkbox"] + label span {
-            font-size: 16px;
-          }
-        }
-      }
-      .pay_right {
+    #pay_step1 {
         width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: -2680px;
-        .receipt {
-          width: 100%;
-          padding: 45px 25px;
-          .receipt_inner {
+        padding: 0px;
+        padding: 60px 16px;
+
+        .inner {
             width: 100%;
-            gap: 28px;
-            .receipt_title {
-              font-size: 20px;
-            }
-            .receipt_info {
-              gap: 10px;
-              width: 100%;
-              li {
-                padding-left: 0px;
-                .receipt_label {
-                  font-size: 15px;
+            .pay_left {
+                .pay_goods {
+                    width: 100%;
+                    padding: 23px 25px;
+                    margin-top: 80px;
+                    .goods_inner {
+                        width: 100%;
+                        gap: 16px;
+                        .goods_label {
+                            font-size: 18px;
+                        }
+                        .goods_line {
+                            width: 100%;
+                        }
+                        .goods_context {
+                            gap: 10px;
+                            .b500 {
+                                font-size: 14px;
+                            }
+                            .g500 {
+                                font-size: 14px;
+                            }
+                            .goods_price {
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
                 }
-                .receipt_price {
-                  font-size: 15px;
+                .pay_user {
+                    width: 100%;
+                    height: 290px;
+                    .user_label {
+                        font-size: 18px;
+                        margin-bottom: 12px;
+                    }
+                    .user_text {
+                        font-size: 13px;
+                    }
+                    .user_info_area {
+                        width: 100%;
+                        gap: 3px;
+                        margin-bottom: 30px;
+                        li {
+                            width: 100%;
+                            height: 36px;
+                            display: flex;
+                            align-items: center;
+                            gap: 61px;
+
+                            .info_label {
+                                width: 63px;
+                                font-size: 14px;
+                            }
+                            input[type='text'] {
+                                width: 90%;
+                                height: 34px;
+                                font-size: 11px;
+                                &:nth-child(5) {
+                                    width: 70px;
+                                }
+                            }
+                            .phone {
+                                font-size: 12px;
+                                gap: 0px;
+                                span {
+                                    opacity: 0;
+                                }
+                                .telFirst {
+                                    padding-left: 10px;
+                                    width: 70px;
+                                    height: 34px;
+                                }
+                                .phone_arrow {
+                                    width: 24px;
+                                    height: 24px;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+
+                            .email {
+                                span {
+                                    font-size: 12px;
+                                }
+                                .emailList {
+                                    width: 160px;
+                                    height: 36px;
+                                    border-radius: 10px;
+                                    border: 1px solid var(--Grey-grey-200, #b6b6b6);
+                                    background: var(--White, #fefefe);
+                                    outline: none;
+                                    padding-left: 10px;
+                                    background: url('/arrow_down.webp') no-repeat right 10px center;
+                                }
+                            }
+                            .request_list {
+                                width: 300px;
+                                height: 36px;
+                                padding-left: 10px;
+                                border-radius: 10px;
+                                border: 1px solid var(--Grey-grey-200, #b6b6b6);
+                                background: url('/arrow_down.webp') no-repeat right 10px center;
+                                outline: none;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+
+                    .check__line input[type='checkbox'] + label {
+                        padding-left: 37px;
+                    }
+                    .check__line input[type='checkbox'] + label:before {
+                        top: 5px;
+                        width: 15px;
+                        height: 15px;
+                    }
+
+                    .check__line label.checked::after {
+                        top: 3px;
+                    }
+
+                    .check__line input[type='checkbox'] + label span {
+                        font-size: 16px;
+                    }
                 }
-              }
             }
+            .pay_right {
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: -2680px;
+                .receipt {
+                    width: 100%;
+                    padding: 45px 25px;
+                    .receipt_inner {
+                        width: 100%;
+                        gap: 28px;
+                        .receipt_title {
+                            font-size: 20px;
+                        }
+                        .receipt_info {
+                            gap: 10px;
+                            width: 100%;
+                            li {
+                                padding-left: 0px;
+                                .receipt_label {
+                                    font-size: 15px;
+                                }
+                                .receipt_price {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
 
-            .receipt_total {
-              width: 100%;
-              padding: 0px;
-              .receipt_total_text {
-                font-size: 15px;
-              }
+                        .receipt_total {
+                            width: 100%;
+                            padding: 0px;
+                            .receipt_total_text {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+
+                .pay_agree {
+                    height: 236px;
+                    padding: 17px 15px;
+
+                    .pay_agree_inner {
+                        .check__line input[type='checkbox'] + label {
+                            padding-left: 30px;
+                        }
+                        .check__line input[type='checkbox'] + label:before {
+                            top: 3px;
+                            width: 18px;
+                            height: 18px;
+                            background: #b6b6b6;
+                        }
+                        .check__line.inputCheck input[type='checkbox'] + label::before {
+                            background: #8dd2ce;
+                        }
+                        .check__line label.checked::after {
+                            top: 3px;
+                        }
+
+                        .check__line input[type='checkbox'] + label span {
+                            font-size: 18px;
+                        }
+                        .text_area {
+                            p {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+
+                .btn_payment {
+                    font-size: 14px;
+                }
             }
-          }
         }
-
-        .pay_agree {
-          height: 236px;
-          padding: 17px 15px;
-
-          .pay_agree_inner {
-            .check__line input[type="checkbox"] + label {
-              padding-left: 30px;
-            }
-            .check__line input[type="checkbox"] + label:before {
-              top: 3px;
-              width: 18px;
-              height: 18px;
-              background: #b6b6b6;
-            }
-            .check__line.inputCheck input[type="checkbox"] + label::before {
-              background: #8dd2ce;
-            }
-            .check__line label.checked::after {
-              top: 3px;
-            }
-
-            .check__line input[type="checkbox"] + label span {
-              font-size: 18px;
-            }
-            .text_area {
-              p {
-                font-size: 13px;
-              }
-            }
-          }
-        }
-
-        .btn_payment {
-          font-size: 14px;
-        }
-      }
     }
-  }
 }

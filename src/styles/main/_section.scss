@@ -1,10 +1,10 @@
 // body {
-//     background-image: url('/main/section1.png');
+//     background-image: url('/main/section1.webp');
 //     background-size: cover;
 // }
 
 .section1 {
-    background-image: url('/main/section1.png');
+    background-image: url('/main/section1.webp');
     color: #111;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@
         opacity: 0; /* ✅ DOM은 항상 유지 */
         visibility: hidden; /* ✅ display:none 대신 visibility */
         transition: opacity 0.2s, visibility 0.2s;
-        background-image: url('/main/Gradient1.png');
+        background-image: url('/main/Gradient1.webp');
         background-repeat: no-repeat;
         background-position: center calc(10% - 1vw);
         background-size: auto;
@@ -117,7 +117,7 @@
 }
 
 .reveal-pin-wrap {
-    background-image: url('/main/section2.png');
+    background-image: url('/main/section2.webp');
     background-color: transparent;
     height: 100vh;
     position: relative;
@@ -269,10 +269,10 @@
         image-rendering: -webkit-optimize-contrast;
     }
     .s3-door--left.s3-door--img {
-        background-image: url('/main/Door-left.png');
+        background-image: url('/main/Door-left.webp');
     }
     .s3-door--right.s3-door--img {
-        background-image: url('/main/Door-right.png');
+        background-image: url('/main/Door-right.webp');
     }
 
     /* ===== 컨텐츠 ===== */
@@ -358,7 +358,7 @@
     .rotating-bg {
         width: 1612px;
         height: 1621px;
-        background: url('/main/Hogangs.png') no-repeat center/contain;
+        background: url('/main/Hogangs.webp') no-repeat center/contain;
         position: absolute;
     }
 
@@ -406,7 +406,7 @@
     }
 
     .main_Section4item {
-        background-image: url('main/cilp.png');
+        background-image: url('main/cilp.webp');
         position: relative;
 
         .con1 {
@@ -420,12 +420,12 @@
             text-align: center;
             top: 10%;
             &:nth-child(odd) {
-                background-image: url('/main/ReviewsContent01.png');
+                background-image: url('/main/ReviewsContent01.webp');
                 background-repeat: no-repeat;
                 background-size: cover;
             }
             &:nth-child(even) {
-                background-image: url('/main/ReviewsContent02.png');
+                background-image: url('/main/ReviewsContent02.webp');
                 background-repeat: no-repeat;
                 background-size: cover;
             }

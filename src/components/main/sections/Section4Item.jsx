@@ -17,8 +17,8 @@ const Section4Item = ({ item, index }) => {
     const style = {
         backgroundImage:
             seed % 2 === 1
-                ? "url('/main/ReviewsContent01.png')"
-                : "url('/main/ReviewsContent02.png')",
+                ? "url('/main/ReviewsContent01.webp')"
+                : "url('/main/ReviewsContent02.webp')",
         transform: `rotate(${tiltDeg}deg) translateY(${shiftY}px)`,
     };
 
@@ -26,7 +26,7 @@ const Section4Item = ({ item, index }) => {
         <section className="main_Section4item">
             <div className="con1" style={style}>
                 <div className="cilp">
-                    <img src="/main/clip.png" alt="" />
+                    <img src="/main/clip.webp" alt="" />
                 </div>
                 <div className="h3">{name}</div>
                 <img src={dog} alt={id} />

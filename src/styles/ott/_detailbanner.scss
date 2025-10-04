@@ -159,7 +159,7 @@
 
 .DetailBanner.youtube-detail {
     background: linear-gradient(0deg, rgba(6, 6, 6, 0.7) 0%, rgba(108, 108, 108, 0) 100%),
-        url('/ott/detail-big2.png');
+        url('/ott/detail-big2.webp');
     h2 {
         font-size: 90px;
         line-height: 1.1;
@@ -169,7 +169,7 @@
 @media screen and (max-width: 600px) {
     .DetailBanner {
         background: linear-gradient(0deg, rgba(6, 6, 6, 0.7) 0%, rgba(108, 108, 108, 0) 100%),
-            url('/ott/detail-big-m.png');
+            url('/ott/detail-big-m.webp');
         margin-top: 20.5128vw;
         height: 160.2564vw;
         padding: 23.0769vw 4.1026vw 0 4.1026vw;
@@ -265,7 +265,7 @@
 
     .DetailBanner.youtube-detail {
         background: linear-gradient(0deg, rgba(6, 6, 6, 0.7) 0%, rgba(108, 108, 108, 0) 100%),
-            url('/ott/detail-big2-m.png');
+            url('/ott/detail-big2-m.webp');
         h2 {
             font-size: 38px;
             line-height: 1.1;

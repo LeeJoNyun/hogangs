@@ -77,7 +77,7 @@ const Visual = () => {
             <HeadLine />
             <figure className="intro" ref={introRef}>
                 {/* 데스크탑에서만 보이는 이미지 */}
-                <img src="/main/visual-dog.PNG" alt="강아지 PC용" />
+                <img src="/main/visual-dog.webp" alt="강아지 PC용" />
                 {/* 텍스트 */}
                 <figcaption className="caption" ref={captionRef}>
                     <h1>
@@ -95,11 +95,11 @@ const Visual = () => {
                 </figcaption>
                 <div className="button">
                     {/* 회전할 이미지 */}
-                    <img src="/main/m.png" alt="" ref={rotateRef} />
+                    <img src="/main/m.webp" alt="" ref={rotateRef} />
                 </div>
                 <div className="main-p">
                     <p>
-                        <img src="/main/icon.png" alt="" />
+                        <img src="/main/icon.webp" alt="" />
                     </p>
                 </div>
 

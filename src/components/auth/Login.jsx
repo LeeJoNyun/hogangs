@@ -100,7 +100,7 @@ const Login = () => {
         <div className="login-overlay">
             <div className="login-modal">
                 <div className="left">
-                    <img src="/auth/loginBg.png" alt="" />
+                    <img src="/auth/loginBg.webp" alt="" />
                 </div>
                 <div className="right">
                     <i className="close-btn" onClick={() => setLoginModal(false)}>
@@ -158,7 +158,7 @@ const Login = () => {
                                         onClick={() => {
                                             socialLogin('google');
                                         }}
-                                        src="/auth/google.png"
+                                        src="/auth/google.webp"
                                         alt=""
                                     />
 
@@ -166,7 +166,7 @@ const Login = () => {
                                         onClick={() => {
                                             socialLogin('kakao');
                                         }}
-                                        src="/auth/kakao.png"
+                                        src="/auth/kakao.webp"
                                         alt=""
                                     />
                                 </div>

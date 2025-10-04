@@ -1,232 +1,231 @@
-@use "./../utils" as *;
+@use './../utils' as *;
 #introduce_grooming_service {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #eef9f8;
-  .inner {
-    height: 760px;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-flow: column;
+    justify-content: center;
     align-items: center;
-    span {
-      color: #454545;
-      font-family: Pretendard;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 30px; /* 150% */
-    }
-    .mobileTitle {
-      display: none;
-    }
-    .headlineWrap {
-      .headline {
-        display: block;
-      }
-      .headlineMobile {
-        display: none;
-      }
-    }
-    .grooming_introduce_swiper {
-      width: 100%;
-      height: 523px;
-      overflow: visible;
-      gap: 64px;
-      position: absolute;
-      bottom: 0;
-      .swiper-slide {
-        width: 453px;
-        height: 453px;
-        background: url("/hotel/introduce/Bubble.png") no-repeat center/cover;
+    background: #eef9f8;
+    .inner {
+        height: 760px;
         display: flex;
+        flex-flow: column;
         align-items: center;
-        justify-content: center;
-        .slide_inner {
-          width: 250px;
-          height: 279px;
-          display: flex;
-          flex-flow: column;
-          gap: 26px;
-          align-items: center;
-          .top {
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-            .title {
-              display: flex;
-              width: auto;
-              height: auto;
-              padding: 6px 14px;
-              border-radius: 22.52px;
-              background: #cecece;
-              color: #fefefe;
-              font-family: Pretendard;
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: normal;
-            }
-            strong {
-              color: #454545;
-              text-align: center;
-              font-family: Pretendard;
-              font-size: 20px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: normal;
-            }
-          }
-          .img {
-            width: 226px;
-            height: 104px;
-            border-radius: 17.323px;
-            opacity: 0.7;
-            object-fit: fill;
-          }
-          .bottom {
-            display: block;
-            p {
-              color: #666;
-              text-align: center;
-              font-family: Pretendard;
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 130%; /* 18.2px */
-            }
-          }
+        span {
+            color: #454545;
+            font-family: Pretendard;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; /* 150% */
         }
-      }
-      .swiper-slide-active {
-        width: 523px;
-        height: 523px;
-        gap: 30px;
-        .slide_inner {
-          width: 296px;
-          height: 345px;
-          .top {
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: space-between;
-            gap: 18px;
-            .title {
-              padding: 8px 16px;
-              border-radius: 26px;
-              background: #4a9f99;
-              font-family: Pretendard;
-              color: #fefefe;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: normal;
-            }
-            strong {
-              color: #454545;
-              text-align: center;
-              font-family: Pretendard;
-              font-size: 24px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: normal;
-            }
-          }
-          .img {
-            width: 260px;
-            height: 140px;
-            border-radius: 20px;
-            opacity: 1;
-          }
-          .bottom {
-            display: block;
-            width: auto;
-            height: auto;
-            p {
-              color: #666;
-              text-align: center;
-              font-family: Pretendard;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 130%; /* 20.8px */
-            }
-          }
+        .mobileTitle {
+            display: none;
         }
-      }
+        .headlineWrap {
+            .headline {
+                display: block;
+            }
+            .headlineMobile {
+                display: none;
+            }
+        }
+        .grooming_introduce_swiper {
+            width: 100%;
+            height: 523px;
+            overflow: visible;
+            gap: 64px;
+            position: absolute;
+            bottom: 0;
+            .swiper-slide {
+                width: 453px;
+                height: 453px;
+                background: url('/hotel/introduce/Bubble.webp') no-repeat center/cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .slide_inner {
+                    width: 250px;
+                    height: 279px;
+                    display: flex;
+                    flex-flow: column;
+                    gap: 26px;
+                    align-items: center;
+                    .top {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 16px;
+                        .title {
+                            display: flex;
+                            width: auto;
+                            height: auto;
+                            padding: 6px 14px;
+                            border-radius: 22.52px;
+                            background: #cecece;
+                            color: #fefefe;
+                            font-family: Pretendard;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                        strong {
+                            color: #454545;
+                            text-align: center;
+                            font-family: Pretendard;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+                    }
+                    .img {
+                        width: 226px;
+                        height: 104px;
+                        border-radius: 17.323px;
+                        opacity: 0.7;
+                        object-fit: fill;
+                    }
+                    .bottom {
+                        display: block;
+                        p {
+                            color: #666;
+                            text-align: center;
+                            font-family: Pretendard;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 130%; /* 18.2px */
+                        }
+                    }
+                }
+            }
+            .swiper-slide-active {
+                width: 523px;
+                height: 523px;
+                gap: 30px;
+                .slide_inner {
+                    width: 296px;
+                    height: 345px;
+                    .top {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 18px;
+                        .title {
+                            padding: 8px 16px;
+                            border-radius: 26px;
+                            background: #4a9f99;
+                            font-family: Pretendard;
+                            color: #fefefe;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                        strong {
+                            color: #454545;
+                            text-align: center;
+                            font-family: Pretendard;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+                    }
+                    .img {
+                        width: 260px;
+                        height: 140px;
+                        border-radius: 20px;
+                        opacity: 1;
+                    }
+                    .bottom {
+                        display: block;
+                        width: auto;
+                        height: auto;
+                        p {
+                            color: #666;
+                            text-align: center;
+                            font-family: Pretendard;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 130%; /* 20.8px */
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
 } //#introduce_grooming_service
 
 @media screen and (max-width: 600px) {
-  #introduce_grooming_service {
-    width: 100%;
-    height: 700px;
-    margin-top: 62px;
-    .inner {
-      height: 669px;
-      gap: 37px;
-      span {
-        display: none;
-      }
-      .mobileTitle {
-        display: block;
-        color: #454545;
-        font-family: Pretendard;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 30px; /* 150% */
-        text-align: center;
-      }
-      .headlineWrap {
-        .headline {
-          display: none;
-        }
-        .headlineMobile {
-          display: block;
-        }
-      }
-      .grooming_introduce_swiper {
-        width: 358px;
-        height: 358px;
-        bottom: 90px;
-        .swiper-slide {
-          width: 358px;
-          height: 358px;
-          background: url("/hotel/introduce/BubbleMobile.png") no-repeat
-            center/cover;
-          .slide_inner {
-            width: 237px;
-            height: 249px;
-            gap: 20px;
-            .top {
-              gap: 14px;
-              .title {
-                font-size: 13px;
-              }
-              strong {
+    #introduce_grooming_service {
+        width: 100%;
+        height: 700px;
+        margin-top: 62px;
+        .inner {
+            height: 669px;
+            gap: 37px;
+            span {
+                display: none;
+            }
+            .mobileTitle {
+                display: block;
+                color: #454545;
+                font-family: Pretendard;
                 font-size: 18px;
-              }
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px; /* 150% */
+                text-align: center;
             }
-            .img {
-              width: 192px;
-              height: 100px;
-              border-radius: 14.286px;
+            .headlineWrap {
+                .headline {
+                    display: none;
+                }
+                .headlineMobile {
+                    display: block;
+                }
             }
-            .bottom {
-              width: 100%;
-              p {
-                font-size: 13px;
-              }
+            .grooming_introduce_swiper {
+                width: 358px;
+                height: 358px;
+                bottom: 90px;
+                .swiper-slide {
+                    width: 358px;
+                    height: 358px;
+                    background: url('/hotel/introduce/BubbleMobile.webp') no-repeat center/cover;
+                    .slide_inner {
+                        width: 237px;
+                        height: 249px;
+                        gap: 20px;
+                        .top {
+                            gap: 14px;
+                            .title {
+                                font-size: 13px;
+                            }
+                            strong {
+                                font-size: 18px;
+                            }
+                        }
+                        .img {
+                            width: 192px;
+                            height: 100px;
+                            border-radius: 14.286px;
+                        }
+                        .bottom {
+                            width: 100%;
+                            p {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
 }

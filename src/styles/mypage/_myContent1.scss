@@ -1,1306 +1,1306 @@
-@use "./../utils/" as *;
+@use './../utils/' as *;
 
 #mycontent1 {
-  min-height: 100vh;
-  background: #ffffff;
-  margin-top: 134px;
-  padding-bottom: 190px;
-  .inner {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    .title {
-      display: flex;
-      align-items: flex-end;
-      gap: 20px;
-      align-self: stretch;
-      h2 {
-        color: #000;
-        font-family: Paperlogy;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-      }
-      span {
-        cursor: pointer;
-        color: var(--Grey-grey-400, #818181);
-        font-family: Pretendard;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 130%; /* 20.8px */
-      }
-    }
-    .dogInfo {
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-      .infoBox {
-        display: grid;
-        gap: 34px;
-        grid-template-columns: repeat(3, 1fr);
-        .infoBox-empty {
-          display: flex;
-          flex-direction: column;
-          width: 463px;
-          height: 454px;
-          padding: 77px 84px 76.737px 83px;
-          justify-content: center;
-          align-items: center;
-          border-radius: 30px;
-          background: var(--Grey-grey-10, #f8f8f8);
-          gap: 40px;
-          .text {
-            width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+    margin-top: 134px;
+    padding-bottom: 190px;
+    .inner {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        .title {
             display: flex;
-            flex-direction: column;
-            gap: 14px;
-            strong {
-              color: var(--Black, #060606);
-              text-align: center;
-              font-family: Paperlogy;
-              font-size: 22px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: normal;
-              letter-spacing: 0.22px;
+            align-items: flex-end;
+            gap: 20px;
+            align-self: stretch;
+            h2 {
+                color: #000;
+                font-family: Paperlogy;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
             }
-            p {
-              color: var(--Grey-grey-800, #353535);
-              text-align: center;
-              font-family: Pretendard;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 130%; /* 20.8px */
-            }
-          }
-          .btn {
-            button {
-              border-radius: 56px;
-              background: var(--Green-green-750, #7abab6);
-              width: 202px;
-              height: 52px;
-              border: none;
-              color: var(--White, #fff);
-              font-family: Paperlogy;
-              font-size: 18px;
-              font-weight: 600;
-              cursor: pointer;
-            }
-          }
-        }
-        .infoBox-add {
-          display: flex;
-          width: 463px;
-          height: 454px;
-          padding: 22px 26px 46.5px 25px;
-          flex-direction: column;
-          align-items: flex-end;
-          border-radius: 30px;
-          border: 4px solid var(--Green-green-200, #e2f8f7);
-          background: var(--Green-green-50, #f9fefd);
-          .edit {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-
             span {
-              font-family: "Pretendard";
-              font-size: 14px;
-              font-weight: 500;
-              color: #7abab6;
-              cursor: pointer;
-
-              &:hover {
-                text-decoration: underline;
-              }
+                cursor: pointer;
+                color: var(--Grey-grey-400, #818181);
+                font-family: Pretendard;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%; /* 20.8px */
             }
-
-            svg {
-              width: 6px;
-              height: 9px;
-              stroke: #7abab6;
-            }
-          }
-
-          .box {
+        }
+        .dogInfo {
             display: flex;
             flex-direction: column;
-            gap: 30px;
-            .top {
-              width: 412px;
-              display: flex;
-              justify-content: center;
-              .hogangPic {
-                width: 216px;
-                height: 216px;
-                border-radius: 50%;
-                // overflow: hidden;
-                position: relative;
-
-                .dog-photo {
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  border-radius: 50%;
-                  border: 1px solid #e9e9e9;
+            gap: 34px;
+            .infoBox {
+                display: grid;
+                gap: 34px;
+                grid-template-columns: repeat(3, 1fr);
+                .infoBox-empty {
+                    display: flex;
+                    flex-direction: column;
+                    width: 463px;
+                    height: 454px;
+                    padding: 77px 84px 76.737px 83px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 30px;
+                    background: var(--Grey-grey-10, #f8f8f8);
+                    gap: 40px;
+                    .text {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 14px;
+                        strong {
+                            color: var(--Black, #060606);
+                            text-align: center;
+                            font-family: Paperlogy;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            letter-spacing: 0.22px;
+                        }
+                        p {
+                            color: var(--Grey-grey-800, #353535);
+                            text-align: center;
+                            font-family: Pretendard;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 130%; /* 20.8px */
+                        }
+                    }
+                    .btn {
+                        button {
+                            border-radius: 56px;
+                            background: var(--Green-green-750, #7abab6);
+                            width: 202px;
+                            height: 52px;
+                            border: none;
+                            color: var(--White, #fff);
+                            font-family: Paperlogy;
+                            font-size: 18px;
+                            font-weight: 600;
+                            cursor: pointer;
+                        }
+                    }
                 }
+                .infoBox-add {
+                    display: flex;
+                    width: 463px;
+                    height: 454px;
+                    padding: 22px 26px 46.5px 25px;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    border-radius: 30px;
+                    border: 4px solid var(--Green-green-200, #e2f8f7);
+                    background: var(--Green-green-50, #f9fefd);
+                    .edit {
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
 
-                .dog-bone {
-                  position: absolute;
-                  bottom: -53px; // 원하는 위치 조정
-                  left: 50%;
-                  transform: translateX(-50%);
-                  width: 100px;
-                  height: auto;
+                        span {
+                            font-family: 'Pretendard';
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: #7abab6;
+                            cursor: pointer;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+
+                        svg {
+                            width: 6px;
+                            height: 9px;
+                            stroke: #7abab6;
+                        }
+                    }
+
+                    .box {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+                        .top {
+                            width: 412px;
+                            display: flex;
+                            justify-content: center;
+                            .hogangPic {
+                                width: 216px;
+                                height: 216px;
+                                border-radius: 50%;
+                                // overflow: hidden;
+                                position: relative;
+
+                                .dog-photo {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    border-radius: 50%;
+                                    border: 1px solid #e9e9e9;
+                                }
+
+                                .dog-bone {
+                                    position: absolute;
+                                    bottom: -53px; // 원하는 위치 조정
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    width: 100px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                        .bottom {
+                            .about {
+                                display: flex;
+                                justify-content: center;
+                                align-items: baseline;
+                                gap: 6px;
+                                width: 412px;
+
+                                .name {
+                                    color: var(--Black, #060606);
+                                    text-align: center;
+                                    font-family: Paperlogy;
+                                    font-size: 22px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: normal;
+                                    letter-spacing: 0.22px;
+                                }
+
+                                .age {
+                                    color: var(--Grey-grey-800, #353535);
+                                    text-align: center;
+                                    font-family: Pretendard;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                }
+                            }
+
+                            .uses {
+                                margin-top: 22px;
+                                display: flex;
+                                justify-content: space-around;
+                                border-top: 1px solid #d6e9e7;
+                                padding-top: 22px;
+                                width: 412px;
+                                div {
+                                    text-align: center;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 6px;
+                                    p {
+                                        color: var(--Black, #060606);
+                                        text-align: center;
+                                        font-family: Pretendard;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        // font-weight: 500;
+                                        line-height: 130%; /* 20.8px */
+                                    }
+
+                                    strong {
+                                        color: var(--Green-green-750, #7abab6);
+                                        text-align: center;
+                                        font-family: Pretendard;
+                                        font-size: 24px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        line-height: normal;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-              }
+                .infoBox-another {
+                    display: flex;
+                    flex-direction: column;
+                    width: 463px;
+                    height: 454px;
+                    padding: 77px 84px 76.737px 83px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 30px;
+                    background: var(--Grey-grey-10, #f8f8f8);
+                    gap: 40px;
+                    .text {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 14px;
+                        strong {
+                            color: var(--Black, #060606);
+                            text-align: center;
+                            font-family: Paperlogy;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            letter-spacing: 0.22px;
+                        }
+                        p {
+                            color: var(--Grey-grey-800, #353535);
+                            text-align: center;
+                            font-family: Pretendard;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 130%; /* 20.8px */
+                        }
+                    }
+                    .btn {
+                        button {
+                            border-radius: 56px;
+                            background: var(--Green-green-750, #7abab6);
+                            width: 202px;
+                            height: 52px;
+                            border: none;
+                            color: var(--White, #fff);
+                            font-family: Paperlogy;
+                            font-size: 18px;
+                            font-weight: 600;
+                            cursor: pointer;
+                        }
+                    }
+                }
             }
-            .bottom {
-              .about {
+        }
+        .ownerInfo {
+            display: flex;
+            flex-direction: column;
+            gap: 34px;
+            dl {
                 display: flex;
-                justify-content: center;
-                align-items: baseline;
-                gap: 6px;
-                width: 412px;
-
-                .name {
-                  color: var(--Black, #060606);
-                  text-align: center;
-                  font-family: Paperlogy;
-                  font-size: 22px;
-                  font-style: normal;
-                  font-weight: 600;
-                  line-height: normal;
-                  letter-spacing: 0.22px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 18px;
+                align-self: stretch;
+                .row {
+                    display: flex;
+                    gap: 6px;
+                    align-items: center;
+                    dt {
+                        width: 65px;
+                        color: var(--Grey-grey-600, #585858);
+                        font-family: Pretendard;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%; /* 20.8px */
+                    }
+                    dd {
+                        width: 327px;
+                        color: var(--Grey-grey-900, #292929);
+                        font-family: Pretendard;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%; /* 23.4px */
+                    }
                 }
+                .actions {
+                    display: flex;
+                    gap: 20px;
 
-                .age {
-                  color: var(--Grey-grey-800, #353535);
-                  text-align: center;
-                  font-family: Pretendard;
-                  font-size: 14px;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: normal;
+                    span {
+                        font-size: 14px;
+                        color: #888;
+                        cursor: pointer;
+
+                        &.sns:hover {
+                            color: #3e8d88;
+                        }
+
+                        &.logout {
+                            color: #666;
+                            font-weight: 500;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
                 }
-              }
-
-              .uses {
-                margin-top: 22px;
+            }
+        }
+        .reservation {
+            display: flex;
+            flex-direction: column;
+            gap: 34px;
+            .tab {
                 display: flex;
-                justify-content: space-around;
-                border-top: 1px solid #d6e9e7;
-                padding-top: 22px;
-                width: 412px;
-                div {
-                  text-align: center;
-                  display: flex;
-                  flex-direction: column;
-                  gap: 6px;
-                  p {
-                    color: var(--Black, #060606);
-                    text-align: center;
-                    font-family: Pretendard;
-                    font-size: 16px;
-                    font-style: normal;
-                    // font-weight: 500;
-                    line-height: 130%; /* 20.8px */
-                  }
-
-                  strong {
-                    color: var(--Green-green-750, #7abab6);
-                    text-align: center;
-                    font-family: Pretendard;
+                gap: 37px;
+                width: 100%;
+                height: 54px;
+                border-bottom: 1px solid #cecece;
+                cursor: pointer;
+                li {
+                    color: var(--Grey-grey-300, #959595);
+                    font-family: Paperlogy;
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
-                  }
+                    letter-spacing: 0.24px;
+                    &.on {
+                        color: var(--Black, #060606);
+                    }
                 }
-              }
             }
-          }
+            .reservationList {
+                display: flex;
+                width: 100%;
+                height: 165px;
+                justify-content: center;
+                align-items: center;
+                &.empty {
+                    height: 124px;
+                }
+                &.hasData {
+                    justify-content: left;
+                    display: flex;
+                    gap: 26px;
+                }
+                span {
+                    color: var(--Grey-grey-500, #616161);
+                    text-align: center;
+                    font-family: Pretendard;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 130%;
+                }
+            }
         }
-        .infoBox-another {
-          display: flex;
-          flex-direction: column;
-          width: 463px;
-          height: 454px;
-          padding: 77px 84px 76.737px 83px;
-          justify-content: center;
-          align-items: center;
-          border-radius: 30px;
-          background: var(--Grey-grey-10, #f8f8f8);
-          gap: 40px;
-          .text {
-            width: 100%;
+        .coupon {
             display: flex;
             flex-direction: column;
-            gap: 14px;
-            strong {
-              color: var(--Black, #060606);
-              text-align: center;
-              font-family: Paperlogy;
-              font-size: 22px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: normal;
-              letter-spacing: 0.22px;
+            gap: 34px;
+            .tab {
+                display: flex;
+                justify-content: space-between;
+                height: 66px;
+                border-bottom: 1px solid #cecece;
+                .couponTab {
+                    display: flex;
+                    gap: 20px;
+                    margin-bottom: 20px;
+
+                    li {
+                        cursor: pointer;
+                        color: var(--Grey-grey-300, #959595);
+                        font-family: Paperlogy;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: 0.24px;
+
+                        &.on {
+                            color: #000;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .subTab {
+                    display: flex;
+                    gap: 12px;
+                    margin-bottom: 30px;
+
+                    li {
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: 500;
+                        padding: 8px 18px;
+                        border-radius: 20px;
+                        border: 1px solid #ccc;
+                        background: #fff;
+                        color: #555;
+                        color: var(--Grey-grey-600, #959595);
+                        text-align: center;
+                        font-family: Pretendard;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+
+                        &.on {
+                            border-radius: 40px;
+                            border: 1px solid var(--Grey-grey-300, #959595);
+                            background: var(--Grey-grey-50, #efefef);
+                            color: #585858;
+                        }
+                    }
+                }
             }
-            p {
-              color: var(--Grey-grey-800, #353535);
-              text-align: center;
-              font-family: Pretendard;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 130%; /* 20.8px */
+            .couponList {
+                display: grid;
+                gap: 43px;
+                grid-template-columns: repeat(3, 1fr);
             }
-          }
-          .btn {
-            button {
-              border-radius: 56px;
-              background: var(--Green-green-750, #7abab6);
-              width: 202px;
-              height: 52px;
-              border: none;
-              color: var(--White, #fff);
-              font-family: Paperlogy;
-              font-size: 18px;
-              font-weight: 600;
-              cursor: pointer;
-            }
-          }
         }
-      }
     }
-    .ownerInfo {
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-      dl {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 18px;
-        align-self: stretch;
-        .row {
-          display: flex;
-          gap: 6px;
-          align-items: center;
-          dt {
-            width: 65px;
-            color: var(--Grey-grey-600, #585858);
-            font-family: Pretendard;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 130%; /* 20.8px */
-          }
-          dd {
-            width: 327px;
-            color: var(--Grey-grey-900, #292929);
-            font-family: Pretendard;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 130%; /* 23.4px */
-          }
-        }
-        .actions {
-          display: flex;
-          gap: 20px;
-
-          span {
-            font-size: 14px;
-            color: #888;
-            cursor: pointer;
-
-            &.sns:hover {
-              color: #3e8d88;
-            }
-
-            &.logout {
-              color: #666;
-              font-weight: 500;
-
-              &:hover {
-                text-decoration: underline;
-              }
-            }
-          }
-        }
-      }
-    }
-    .reservation {
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-      .tab {
-        display: flex;
-        gap: 37px;
-        width: 100%;
-        height: 54px;
-        border-bottom: 1px solid #cecece;
-        cursor: pointer;
-        li {
-          color: var(--Grey-grey-300, #959595);
-          font-family: Paperlogy;
-          font-size: 24px;
-          font-style: normal;
-          font-weight: 600;
-          line-height: normal;
-          letter-spacing: 0.24px;
-          &.on {
-            color: var(--Black, #060606);
-          }
-        }
-      }
-      .reservationList {
-        display: flex;
-        width: 100%;
-        height: 165px;
-        justify-content: center;
-        align-items: center;
-        &.empty {
-          height: 124px;
-        }
-        &.hasData {
-          justify-content: left;
-          display: flex;
-          gap: 26px;
-        }
-        span {
-          color: var(--Grey-grey-500, #616161);
-          text-align: center;
-          font-family: Pretendard;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 130%;
-        }
-      }
-    }
-    .coupon {
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-      .tab {
-        display: flex;
-        justify-content: space-between;
-        height: 66px;
-        border-bottom: 1px solid #cecece;
-        .couponTab {
-          display: flex;
-          gap: 20px;
-          margin-bottom: 20px;
-
-          li {
-            cursor: pointer;
-            color: var(--Grey-grey-300, #959595);
-            font-family: Paperlogy;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            letter-spacing: 0.24px;
-
-            &.on {
-              color: #000;
-              font-weight: 700;
-            }
-          }
-        }
-        .subTab {
-          display: flex;
-          gap: 12px;
-          margin-bottom: 30px;
-
-          li {
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            padding: 8px 18px;
-            border-radius: 20px;
-            border: 1px solid #ccc;
-            background: #fff;
-            color: #555;
-            color: var(--Grey-grey-600, #959595);
-            text-align: center;
-            font-family: Pretendard;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-
-            &.on {
-              border-radius: 40px;
-              border: 1px solid var(--Grey-grey-300, #959595);
-              background: var(--Grey-grey-50, #efefef);
-              color: #585858;
-            }
-          }
-        }
-      }
-      .couponList {
-        display: grid;
-        gap: 43px;
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-  }
 }
 
 #couponItem {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-  .couponImg {
-    background-image: url(/mypage/coupon.png);
-    background-repeat: no-repeat;
-    display: flex;
-    width: 438px;
-    height: 205px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 9.92px;
-    .txt {
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 9.919px;
-      padding-left: 30px;
-      span {
-        display: flex;
-        width: 65px;
-        padding: 3px 12px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        color: var(--White, #fefefe);
-        text-align: center;
-        font-family: Paperlogy;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        border-radius: 30px;
-        background: var(--Green-green-750, #7abab6);
-      }
-      h3 {
-        color: var(--Black, #060606);
-        font-family: Paperlogy;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        letter-spacing: 0.32px;
-      }
-      p {
-        color: var(--Black, #060606);
-        font-family: Pretendard;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-      }
-    }
-  }
-}
-#ExpiredCouponItem {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-  .couponImg {
-    background-image: url(/mypage/ExpiredCoupon.png);
-    background-repeat: no-repeat;
-    display: flex;
-    width: 438px;
-    height: 205px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 9.92px;
-    .txt {
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 9.919px;
-      padding-left: 30px;
-      span {
-        display: flex;
-        width: 65px;
-        padding: 3px 12px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        color: var(--White, #fefefe);
-        text-align: center;
-        font-family: Paperlogy;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        border-radius: 30px;
-        background: var(--Green-green-750, #7abab6);
-      }
-      h3 {
-        color: var(--Black, #060606);
-        font-family: Paperlogy;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        letter-spacing: 0.32px;
-      }
-      p {
-        color: var(--Black, #060606);
-        font-family: Pretendard;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-      }
-    }
-  }
-}
-
-#dogInfoBox {
-  min-height: 100vh;
-  background: #ffffff;
-  padding-bottom: 190px;
-  .infoForm {
     display: flex;
     flex-direction: column;
     gap: 34px;
-    .infoFormBox {
-      width: 100%;
-      height: 330px;
-      display: flex;
-      gap: 70px;
-      .infoLeft {
-        width: 260px;
-        height: 276px;
+    .couponImg {
+        background-image: url(/mypage/coupon.webp);
+        background-repeat: no-repeat;
         display: flex;
-        flex-direction: column;
+        width: 438px;
+        height: 205px;
         justify-content: center;
         align-items: center;
-        gap: 20px;
-        .hogangprofile {
-          width: 216px;
-          height: 216px;
-          border-radius: 50%;
-          overflow: hidden;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          &.default {
-            padding: 44.031px 29.908px 44.031px 29.077px;
-            background: var(--Grey-gery-75, #e9e9e9);
-
-            img {
-              width: 157.015px;
-              height: 127.938px;
-              flex-shrink: 0;
-            }
-          }
-
-          &.filled {
-            background: none;
-            padding: 0;
-            border: 1px solid #e9e9e9;
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-          }
-        }
-
-        .btnWrap {
-          display: flex;
-          gap: 8px;
-          button {
-            display: flex;
-            width: 84px;
-            height: 40px;
-            padding: 12px 0 11px 0;
-            justify-content: center;
-            align-items: center;
-            flex-shrink: 0;
-            border-radius: 40px;
-            border: 1px solid var(--Grey-grey-200, #b6b6b6);
-            background: none;
-            color: var(--Grey-grey-300, #959595);
-            text-align: center;
-            font-family: Pretendard;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-          }
-        }
-      }
-      .infoRight {
-        width: 922px;
-        height: 330px;
-        display: flex;
         flex-direction: column;
-        gap: 18px;
-        .form-row {
-          width: 100%;
-          display: flex;
-          gap: 6px;
-          align-items: center;
-          .label {
-            width: 65px;
-            color: var(--Grey-grey-600, #585858);
-
-            /* Medium/16px */
-            font-family: Pretendard;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 130%; /* 20.8px */
-          }
-          input {
+        gap: 9.92px;
+        .txt {
             display: flex;
-            width: 336px;
-            padding: 7px 130px 8px 14px;
-            align-items: center;
-            border-radius: 10px;
-            border: 1px solid var(--Grey-grey-200, #b6b6b6);
-            background: var(--White, #fefefe);
-            color: var(--Grey-grey-200, #b6b6b6);
-            font-family: Pretendard;
-            font-size: 16px;
-            font-style: normal;
-            line-height: 130%; /* 20.8px */
-          }
-          .radioWrap {
-            display: flex;
-            gap: 30px;
-
-            .choice {
-              display: flex;
-              align-items: center;
-              gap: 6px;
-              /* 기본값: 흰 구멍 지름을 조금 줄인 버전 (기존 45% → 36%) */
-              .radio-donut {
-                --hole: 36%;
-                appearance: none;
-                width: 21px;
-                height: 21px;
-                border-radius: 50%;
-                margin: 0;
-                padding: 0;
-
-                background-color: var(--gray, #d9d9d9);
-                /* 안쪽 흰 점 크기 = --hole, 경계 부드럽게 하려고 +1% */
-                background-image: radial-gradient(
-                  circle at 50% 50%,
-                  #fff 0 var(--hole),
-                  transparent calc(var(--hole) + 1%)
-                );
-                background-repeat: no-repeat;
-              }
-
-              .radio-donut:checked {
-                background-color: var(--brand, #8dd2ce);
-              }
-
-              .txt {
-                color: var(--Grey-grey-600, #585858);
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 9.919px;
+            padding-left: 30px;
+            span {
+                display: flex;
+                width: 65px;
+                padding: 3px 12px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                color: var(--White, #fefefe);
                 text-align: center;
-                /* Medium/18px */
+                font-family: Paperlogy;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                border-radius: 30px;
+                background: var(--Green-green-750, #7abab6);
+            }
+            h3 {
+                color: var(--Black, #060606);
+                font-family: Paperlogy;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 0.32px;
+            }
+            p {
+                color: var(--Black, #060606);
                 font-family: Pretendard;
                 font-size: 18px;
                 font-style: normal;
-                font-weight: 500;
-                line-height: 130%; /* 23.4px */
-              }
+                font-weight: 400;
+                line-height: normal;
             }
-            // label {
-            //   width: 130px;
-            //   display: flex;
-            //   align-items: center;
-            //   gap: 6px;
-            //   input {
-            //     width: 21px;
-            //   }
-            // }
-          }
-          .selectWrap {
-            display: flex;
-            gap: 6px;
-            select {
-              width: 164px;
-              height: 36px;
-              display: flex;
-              padding: 7px 16px 8px 14px;
-              justify-content: center;
-              align-items: center;
-              gap: 98px;
-              border-radius: 10px;
-              border: 1px solid var(--Grey-grey-200, #b6b6b6);
-              background: var(--White, #fefefe);
-              color: var(--Grey-grey-200, #b6b6b6);
-              font-family: Pretendard;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 130%; /* 20.8px */
-            }
-          }
         }
-      }
     }
-  }
-  .vaccination,
-  .parasite {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    .checkBox-Group {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-
-      label {
-        cursor: pointer;
-        input {
-          display: none; // 체크박스 숨김
-        }
-
-        p {
-          border: 1px solid #ccc;
-          border-radius: 8px;
-          padding: 0px 20px;
-          text-align: center;
-          font-size: 15px;
-          font-weight: 600;
-          font-family: Pretendard;
-          color: #222;
-          background: #fff;
-          transition: all 0.2s ease;
-          min-width: 140px;
-          min-height: 60px; // 높이 통일
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-
-          span {
-            font-size: 13px;
-            font-weight: 400;
-            color: #777;
-            margin-top: 4px;
-          }
-        }
-
-        //  체크됐을 때 스타일
-        input:checked + p {
-          background: #7abab6;
-          border-color: #b0dad8;
-          color: #fff;
-
-          span {
-            color: #f0f0f0;
-          }
-        }
-      }
-    }
-  }
-  .health,
-  .more {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    .title {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 16px;
-    }
-    .txt {
-      display: flex;
-      width: 1400px;
-      height: 124px;
-      // padding: 20px 677px 83px 26px;
-      align-items: center;
-      align-self: stretch;
-      border-radius: 20px;
-      border: 1px solid var(--Grey-grey-200, #b6b6b6);
-      input {
-        width: 1400px;
-        padding: 20px 677px 83px 26px;
-        align-items: center;
-        align-self: stretch;
-        border-radius: 20px;
-        border: none;
-      }
-    }
-  }
-  .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    button {
-      display: flex;
-      width: 388px;
-      height: 56px;
-      padding: 18px 56px 17px 56px;
-      justify-content: center;
-      align-items: center;
-      border-radius: 56px;
-      background: var(--Green-green-750, #7abab6);
-      border: none;
-      color: var(--White, #fff);
-      text-align: center;
-      font-family: Paperlogy;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-    }
-  }
 }
-
-#sns-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 9998;
-  @include flexbox();
-  .sns-modal {
-    width: 338px;
-    height: 162px;
-    border-radius: 30px;
-    background: #fff;
-    .top {
-      border-radius: 30px 30px 0 0;
-      width: 100%;
-      background: var(--Green-green-600, #b0dad8);
-      border-bottom: 1px solid #b0dad8;
-      .close-btn {
+#ExpiredCouponItem {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    .couponImg {
+        background-image: url(/mypage/ExpiredCoupon.webp);
+        background-repeat: no-repeat;
         display: flex;
-        justify-content: right;
-        padding: 8px 19px 8px 299px;
-        cursor: pointer;
-      }
-    }
-    .bottom {
-      .snsWrap {
-        display: flex;
+        width: 438px;
+        height: 205px;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
-        gap: 30px;
-        margin-top: 36px;
-        .sns {
-          display: flex;
-          gap: 6px;
-          .icon {
+        flex-direction: column;
+        gap: 9.92px;
+        .txt {
             display: flex;
-            align-items: center;
-          }
-          .txt {
-            display: flex;
-            width: 65px;
+            width: 100%;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            gap: 6px;
-            p {
-              color: var(--Grey-grey-900, #292929);
-              text-align: center;
-              font-family: Pretendard;
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: normal;
-            }
+            align-items: flex-start;
+            gap: 9.919px;
+            padding-left: 30px;
             span {
-              color: var(--Grey-grey-400, #818181);
-              text-align: center;
-              font-family: Pretendard;
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: normal;
-              cursor: pointer;
+                display: flex;
+                width: 65px;
+                padding: 3px 12px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                color: var(--White, #fefefe);
+                text-align: center;
+                font-family: Paperlogy;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                border-radius: 30px;
+                background: var(--Green-green-750, #7abab6);
             }
-          }
+            h3 {
+                color: var(--Black, #060606);
+                font-family: Paperlogy;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 0.32px;
+            }
+            p {
+                color: var(--Black, #060606);
+                font-family: Pretendard;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
         }
-      }
     }
-  }
 }
 
-@media screen and (max-width: 600px) {
-  #mycontent1 {
-    padding: 60px 16px 40px 16px;
-    margin-top: 0;
-    .inner {
-      gap: 40px;
-      width: 100%;
-      .title {
-        gap: 14px;
-        h2 {
-          font-size: 18px;
-        }
-        span {
-          font-size: 14px;
-        }
-      }
-      .dogInfo {
-        gap: 13.96px;
-        .infoBox {
-          gap: 13.96px;
-          .infoBox-empty {
-            width: 240px;
-            height: 290px;
-            padding: 57.836px 16px;
-            gap: 20px;
-            .puppyImg {
-              img {
-                width: 97.533px;
-                height: 46.742px;
-              }
-            }
-            .text {
-              gap: 7.59px;
-              width: 100%;
-              strong {
-                font-size: 14px;
-              }
-              p {
-                font-size: 13px;
-              }
-            }
-            .btn {
-              button {
-                width: 112px;
-                height: 30px;
-                border-radius: 30.344px;
-                font-size: 13px;
-              }
-            }
-          }
-          .infoBox-add {
-            width: 240px;
-            height: 290px;
-            padding: 11px 8px 24px 8px;
-            .edit {
-              gap: 4px;
-              span {
-                font-size: 12px;
-              }
-            }
-            .box {
-              width: 223.242px;
-              .top {
-                width: 100%;
-                .hogangPic {
-                  width: 113px;
-                  height: 110px;
-                }
-              }
-              .bottom {
-                width: 100%;
-                .about {
-                  width: 100%;
-                  gap: 3.25px;
-                  .name {
-                    font-size: 16px;
-                  }
-                  .age {
-                    font-size: 10px;
-                  }
-                }
-                .uses {
-                  width: 100%;
-                  margin-top: 14px;
-                  div {
-                    gap: 6px;
-                    p {
-                      font-size: 13px;
-                    }
-                    strong {
-                      font-size: 16px;
-                    }
-                  }
-                }
-              }
-            }
-          }
-          .infoBox-another {
-            width: 240px;
-            height: 290px;
-            padding: 57.836px 16px;
-            gap: 20px;
-            .puppyImg {
-              img {
-                width: 97.533px;
-                height: 46.742px;
-              }
-            }
-            .text {
-              gap: 7.59px;
-              width: 100%;
-              strong {
-                font-size: 14px;
-              }
-              p {
-                font-size: 13px;
-              }
-            }
-            .btn {
-              button {
-                width: 112px;
-                height: 30px;
-                border-radius: 30.344px;
-                font-size: 13px;
-              }
-            }
-          }
-        }
-      }
-      .ownerInfo {
-        dl {
-          gap: 12px;
-          .row {
-            gap: 6px;
-            dt {
-              width: 65px;
-              font-size: 13px;
-            }
-            dd {
-              font-size: 14px;
-            }
-          }
-          .actions {
-            gap: 18px;
-            span {
-              font-size: 13px;
-            }
-          }
-        }
-      }
-      .reservation {
-        gap: 20px;
-        height: 314px;
-        .tab {
-          gap: 10px;
-          height: 33px;
-          li {
-            font-size: 13px;
-          }
-        }
-        .reservationList {
-          height: 158px;
-          &.hasData {
-            gap: 10px;
-            margin-top: 23px;
-          }
-          span {
-            font-size: 10px;
-          }
-        }
-      }
-      .coupon {
-        gap: 10px;
-        .tab {
-          height: 44px;
-          .couponTab {
-            gap: 10px;
-            li {
-              font-size: 13px;
-            }
-          }
-          .subTab {
-            display: none;
-          }
-        }
-        .couponList {
-          gap: 10px;
-        }
-      }
-    }
-  }
-  #couponItem {
-    gap: 10px;
-    .couponImg {
-      background-image: url(/mypage/couponMobile.png);
-      width: 174px;
-      height: 159px;
-      .txt {
-        padding-left: 20px;
-        margin-top: -50px;
-        gap: 6px;
-        span {
-          font-size: 10px;
-          width: 42px;
-          padding: 1.932px 7.727px;
-        }
-        h3 {
-          font-size: 16px;
-        }
-        p {
-          font-size: 12px;
-        }
-      }
-    }
-  }
-  #ExpiredCouponItem {
-    gap: 10px;
-    .couponImg {
-      background-image: url(/mypage/ExpiredCouponMobile.png);
-      width: 174px;
-      height: 159px;
-      .txt {
-        padding-left: 20px;
-        margin-top: -50px;
-        gap: 6px;
-        span {
-          font-size: 10px;
-          width: 42px;
-          padding: 1.932px 7.727px;
-        }
-        h3 {
-          font-size: 16px;
-        }
-        p {
-          font-size: 12px;
-        }
-      }
-    }
-  }
-  #dogInfoBox {
-    padding-bottom: 80px;
-    .inner {
-      gap: 80px;
-    }
+#dogInfoBox {
+    min-height: 100vh;
+    background: #ffffff;
+    padding-bottom: 190px;
     .infoForm {
-      gap: 30px;
-      height: 547px;
-      .infoFormBox {
+        display: flex;
         flex-direction: column;
-        gap: 30px;
-        .infoLeft {
-          flex-direction: row;
-          .hogangprofile {
-            width: 146px;
-            height: 146px;
-            &.default {
-              padding: 29.761px 20.215px 29.762px 19.654px;
-              img {
-                width: 106.131px;
-                height: 86.477px;
-              }
+        gap: 34px;
+        .infoFormBox {
+            width: 100%;
+            height: 330px;
+            display: flex;
+            gap: 70px;
+            .infoLeft {
+                width: 260px;
+                height: 276px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                .hogangprofile {
+                    width: 216px;
+                    height: 216px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &.default {
+                        padding: 44.031px 29.908px 44.031px 29.077px;
+                        background: var(--Grey-gery-75, #e9e9e9);
+
+                        img {
+                            width: 157.015px;
+                            height: 127.938px;
+                            flex-shrink: 0;
+                        }
+                    }
+
+                    &.filled {
+                        background: none;
+                        padding: 0;
+                        border: 1px solid #e9e9e9;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                .btnWrap {
+                    display: flex;
+                    gap: 8px;
+                    button {
+                        display: flex;
+                        width: 84px;
+                        height: 40px;
+                        padding: 12px 0 11px 0;
+                        justify-content: center;
+                        align-items: center;
+                        flex-shrink: 0;
+                        border-radius: 40px;
+                        border: 1px solid var(--Grey-grey-200, #b6b6b6);
+                        background: none;
+                        color: var(--Grey-grey-300, #959595);
+                        text-align: center;
+                        font-family: Pretendard;
+                        font-size: 14px;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+                }
             }
-          }
-          .btnWrap {
-            flex-direction: column;
-            button {
-              width: 84px;
-              height: 34px;
-              font-size: 13px;
+            .infoRight {
+                width: 922px;
+                height: 330px;
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                .form-row {
+                    width: 100%;
+                    display: flex;
+                    gap: 6px;
+                    align-items: center;
+                    .label {
+                        width: 65px;
+                        color: var(--Grey-grey-600, #585858);
+
+                        /* Medium/16px */
+                        font-family: Pretendard;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%; /* 20.8px */
+                    }
+                    input {
+                        display: flex;
+                        width: 336px;
+                        padding: 7px 130px 8px 14px;
+                        align-items: center;
+                        border-radius: 10px;
+                        border: 1px solid var(--Grey-grey-200, #b6b6b6);
+                        background: var(--White, #fefefe);
+                        color: var(--Grey-grey-200, #b6b6b6);
+                        font-family: Pretendard;
+                        font-size: 16px;
+                        font-style: normal;
+                        line-height: 130%; /* 20.8px */
+                    }
+                    .radioWrap {
+                        display: flex;
+                        gap: 30px;
+
+                        .choice {
+                            display: flex;
+                            align-items: center;
+                            gap: 6px;
+                            /* 기본값: 흰 구멍 지름을 조금 줄인 버전 (기존 45% → 36%) */
+                            .radio-donut {
+                                --hole: 36%;
+                                appearance: none;
+                                width: 21px;
+                                height: 21px;
+                                border-radius: 50%;
+                                margin: 0;
+                                padding: 0;
+
+                                background-color: var(--gray, #d9d9d9);
+                                /* 안쪽 흰 점 크기 = --hole, 경계 부드럽게 하려고 +1% */
+                                background-image: radial-gradient(
+                                    circle at 50% 50%,
+                                    #fff 0 var(--hole),
+                                    transparent calc(var(--hole) + 1%)
+                                );
+                                background-repeat: no-repeat;
+                            }
+
+                            .radio-donut:checked {
+                                background-color: var(--brand, #8dd2ce);
+                            }
+
+                            .txt {
+                                color: var(--Grey-grey-600, #585858);
+                                text-align: center;
+                                /* Medium/18px */
+                                font-family: Pretendard;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 130%; /* 23.4px */
+                            }
+                        }
+                        // label {
+                        //   width: 130px;
+                        //   display: flex;
+                        //   align-items: center;
+                        //   gap: 6px;
+                        //   input {
+                        //     width: 21px;
+                        //   }
+                        // }
+                    }
+                    .selectWrap {
+                        display: flex;
+                        gap: 6px;
+                        select {
+                            width: 164px;
+                            height: 36px;
+                            display: flex;
+                            padding: 7px 16px 8px 14px;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 98px;
+                            border-radius: 10px;
+                            border: 1px solid var(--Grey-grey-200, #b6b6b6);
+                            background: var(--White, #fefefe);
+                            color: var(--Grey-grey-200, #b6b6b6);
+                            font-family: Pretendard;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 130%; /* 20.8px */
+                        }
+                    }
+                }
             }
-          }
         }
-        .infoRight {
-          width: 358px;
-          height: 320px;
-          .form-row {
-            label {
-              font-size: 14px;
-            }
-            input {
-              width: 268px;
-              padding: 8px 95px 9px 14px;
-              font-size: 13px;
-            }
-            .radioWrap {
-              label {
-              }
-            }
-            .selectWrap {
-              select {
-                width: 135px;
-                font-size: 13px;
-              }
-            }
-          }
-        }
-      }
     }
     .vaccination,
     .parasite {
-      width: 358px;
-      .title {
         display: flex;
         flex-direction: column;
-        h2 {
-          width: 100%;
+        gap: 30px;
+        .checkBox-Group {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+
+            label {
+                cursor: pointer;
+                input {
+                    display: none; // 체크박스 숨김
+                }
+
+                p {
+                    border: 1px solid #ccc;
+                    border-radius: 8px;
+                    padding: 0px 20px;
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: 600;
+                    font-family: Pretendard;
+                    color: #222;
+                    background: #fff;
+                    transition: all 0.2s ease;
+                    min-width: 140px;
+                    min-height: 60px; // 높이 통일
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    span {
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: #777;
+                        margin-top: 4px;
+                    }
+                }
+
+                //  체크됐을 때 스타일
+                input:checked + p {
+                    background: #7abab6;
+                    border-color: #b0dad8;
+                    color: #fff;
+
+                    span {
+                        color: #f0f0f0;
+                    }
+                }
+            }
         }
-        span {
-          justify-content: flex-start;
-          width: 100%;
-        }
-      }
-      .checkBox-Group {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(2, 1fr);
-        label {
-          width: 174px;
-          height: 62px;
-          p {
-            font-size: 16px;
-          }
-        }
-      }
-    }
-    .vaccination {
-      label {
-        &:last-child {
-          width: 358px;
-          grid-column: span 2;
-        }
-      }
     }
     .health,
     .more {
-      gap: 20px;
-      .title {
-        width: 100%;
-      }
-      .txt {
-        width: 100%;
-        input {
-          width: 100%;
-          padding: 15px 0 78px 13px;
-          font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
         }
-      }
+        .txt {
+            display: flex;
+            width: 1400px;
+            height: 124px;
+            // padding: 20px 677px 83px 26px;
+            align-items: center;
+            align-self: stretch;
+            border-radius: 20px;
+            border: 1px solid var(--Grey-grey-200, #b6b6b6);
+            input {
+                width: 1400px;
+                padding: 20px 677px 83px 26px;
+                align-items: center;
+                align-self: stretch;
+                border-radius: 20px;
+                border: none;
+            }
+        }
     }
     .btn {
-      button {
-        width: 358px;
-        height: 50px;
-        font-size: 14px;
-      }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+            display: flex;
+            width: 388px;
+            height: 56px;
+            padding: 18px 56px 17px 56px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 56px;
+            background: var(--Green-green-750, #7abab6);
+            border: none;
+            color: var(--White, #fff);
+            text-align: center;
+            font-family: Paperlogy;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
     }
-  }
+}
+
+#sns-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9998;
+    @include flexbox();
+    .sns-modal {
+        width: 338px;
+        height: 162px;
+        border-radius: 30px;
+        background: #fff;
+        .top {
+            border-radius: 30px 30px 0 0;
+            width: 100%;
+            background: var(--Green-green-600, #b0dad8);
+            border-bottom: 1px solid #b0dad8;
+            .close-btn {
+                display: flex;
+                justify-content: right;
+                padding: 8px 19px 8px 299px;
+                cursor: pointer;
+            }
+        }
+        .bottom {
+            .snsWrap {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 30px;
+                margin-top: 36px;
+                .sns {
+                    display: flex;
+                    gap: 6px;
+                    .icon {
+                        display: flex;
+                        align-items: center;
+                    }
+                    .txt {
+                        display: flex;
+                        width: 65px;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 6px;
+                        p {
+                            color: var(--Grey-grey-900, #292929);
+                            text-align: center;
+                            font-family: Pretendard;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                        span {
+                            color: var(--Grey-grey-400, #818181);
+                            text-align: center;
+                            font-family: Pretendard;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #mycontent1 {
+        padding: 60px 16px 40px 16px;
+        margin-top: 0;
+        .inner {
+            gap: 40px;
+            width: 100%;
+            .title {
+                gap: 14px;
+                h2 {
+                    font-size: 18px;
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+            .dogInfo {
+                gap: 13.96px;
+                .infoBox {
+                    gap: 13.96px;
+                    .infoBox-empty {
+                        width: 240px;
+                        height: 290px;
+                        padding: 57.836px 16px;
+                        gap: 20px;
+                        .puppyImg {
+                            img {
+                                width: 97.533px;
+                                height: 46.742px;
+                            }
+                        }
+                        .text {
+                            gap: 7.59px;
+                            width: 100%;
+                            strong {
+                                font-size: 14px;
+                            }
+                            p {
+                                font-size: 13px;
+                            }
+                        }
+                        .btn {
+                            button {
+                                width: 112px;
+                                height: 30px;
+                                border-radius: 30.344px;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    .infoBox-add {
+                        width: 240px;
+                        height: 290px;
+                        padding: 11px 8px 24px 8px;
+                        .edit {
+                            gap: 4px;
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                        .box {
+                            width: 223.242px;
+                            .top {
+                                width: 100%;
+                                .hogangPic {
+                                    width: 113px;
+                                    height: 110px;
+                                }
+                            }
+                            .bottom {
+                                width: 100%;
+                                .about {
+                                    width: 100%;
+                                    gap: 3.25px;
+                                    .name {
+                                        font-size: 16px;
+                                    }
+                                    .age {
+                                        font-size: 10px;
+                                    }
+                                }
+                                .uses {
+                                    width: 100%;
+                                    margin-top: 14px;
+                                    div {
+                                        gap: 6px;
+                                        p {
+                                            font-size: 13px;
+                                        }
+                                        strong {
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .infoBox-another {
+                        width: 240px;
+                        height: 290px;
+                        padding: 57.836px 16px;
+                        gap: 20px;
+                        .puppyImg {
+                            img {
+                                width: 97.533px;
+                                height: 46.742px;
+                            }
+                        }
+                        .text {
+                            gap: 7.59px;
+                            width: 100%;
+                            strong {
+                                font-size: 14px;
+                            }
+                            p {
+                                font-size: 13px;
+                            }
+                        }
+                        .btn {
+                            button {
+                                width: 112px;
+                                height: 30px;
+                                border-radius: 30.344px;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+            .ownerInfo {
+                dl {
+                    gap: 12px;
+                    .row {
+                        gap: 6px;
+                        dt {
+                            width: 65px;
+                            font-size: 13px;
+                        }
+                        dd {
+                            font-size: 14px;
+                        }
+                    }
+                    .actions {
+                        gap: 18px;
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .reservation {
+                gap: 20px;
+                height: 314px;
+                .tab {
+                    gap: 10px;
+                    height: 33px;
+                    li {
+                        font-size: 13px;
+                    }
+                }
+                .reservationList {
+                    height: 158px;
+                    &.hasData {
+                        gap: 10px;
+                        margin-top: 23px;
+                    }
+                    span {
+                        font-size: 10px;
+                    }
+                }
+            }
+            .coupon {
+                gap: 10px;
+                .tab {
+                    height: 44px;
+                    .couponTab {
+                        gap: 10px;
+                        li {
+                            font-size: 13px;
+                        }
+                    }
+                    .subTab {
+                        display: none;
+                    }
+                }
+                .couponList {
+                    gap: 10px;
+                }
+            }
+        }
+    }
+    #couponItem {
+        gap: 10px;
+        .couponImg {
+            background-image: url(/mypage/couponMobile.webp);
+            width: 174px;
+            height: 159px;
+            .txt {
+                padding-left: 20px;
+                margin-top: -50px;
+                gap: 6px;
+                span {
+                    font-size: 10px;
+                    width: 42px;
+                    padding: 1.932px 7.727px;
+                }
+                h3 {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    #ExpiredCouponItem {
+        gap: 10px;
+        .couponImg {
+            background-image: url(/mypage/ExpiredCouponMobile.webp);
+            width: 174px;
+            height: 159px;
+            .txt {
+                padding-left: 20px;
+                margin-top: -50px;
+                gap: 6px;
+                span {
+                    font-size: 10px;
+                    width: 42px;
+                    padding: 1.932px 7.727px;
+                }
+                h3 {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    #dogInfoBox {
+        padding-bottom: 80px;
+        .inner {
+            gap: 80px;
+        }
+        .infoForm {
+            gap: 30px;
+            height: 547px;
+            .infoFormBox {
+                flex-direction: column;
+                gap: 30px;
+                .infoLeft {
+                    flex-direction: row;
+                    .hogangprofile {
+                        width: 146px;
+                        height: 146px;
+                        &.default {
+                            padding: 29.761px 20.215px 29.762px 19.654px;
+                            img {
+                                width: 106.131px;
+                                height: 86.477px;
+                            }
+                        }
+                    }
+                    .btnWrap {
+                        flex-direction: column;
+                        button {
+                            width: 84px;
+                            height: 34px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .infoRight {
+                    width: 358px;
+                    height: 320px;
+                    .form-row {
+                        label {
+                            font-size: 14px;
+                        }
+                        input {
+                            width: 268px;
+                            padding: 8px 95px 9px 14px;
+                            font-size: 13px;
+                        }
+                        .radioWrap {
+                            label {
+                            }
+                        }
+                        .selectWrap {
+                            select {
+                                width: 135px;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .vaccination,
+        .parasite {
+            width: 358px;
+            .title {
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    width: 100%;
+                }
+                span {
+                    justify-content: flex-start;
+                    width: 100%;
+                }
+            }
+            .checkBox-Group {
+                display: grid;
+                gap: 10px;
+                grid-template-columns: repeat(2, 1fr);
+                label {
+                    width: 174px;
+                    height: 62px;
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .vaccination {
+            label {
+                &:last-child {
+                    width: 358px;
+                    grid-column: span 2;
+                }
+            }
+        }
+        .health,
+        .more {
+            gap: 20px;
+            .title {
+                width: 100%;
+            }
+            .txt {
+                width: 100%;
+                input {
+                    width: 100%;
+                    padding: 15px 0 78px 13px;
+                    font-size: 13px;
+                }
+            }
+        }
+        .btn {
+            button {
+                width: 358px;
+                height: 50px;
+                font-size: 14px;
+            }
+        }
+    }
 }

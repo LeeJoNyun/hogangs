@@ -3,11 +3,11 @@ import ReactCardFlip from 'react-card-flip';
 import { useNavigate } from 'react-router-dom';
 
 const cards = [
-    { id: 1, front: '/ott/card-front1.png', back: '/ott/card-back1.png' },
-    { id: 2, front: '/ott/card-front2.png', back: '/ott/card-back2.png' },
-    { id: 3, front: '/ott/card-front3.png', back: '/ott/card-back3.png' },
-    { id: 4, front: '/ott/card-front4.png', back: '/ott/card-back4.png' },
-    { id: 5, front: '/ott/card-front5.png', back: '/ott/card-back5.png' },
+    { id: 1, front: '/ott/card-front1.webp', back: '/ott/card-back1.webp' },
+    { id: 2, front: '/ott/card-front2.webp', back: '/ott/card-back2.webp' },
+    { id: 3, front: '/ott/card-front3.webp', back: '/ott/card-back3.webp' },
+    { id: 4, front: '/ott/card-front4.webp', back: '/ott/card-back4.webp' },
+    { id: 5, front: '/ott/card-front5.webp', back: '/ott/card-back5.webp' },
 ];
 
 const Card = () => {
@@ -68,7 +68,8 @@ const Card = () => {
                             >
                                 <img src={card.back} alt={`카드 ${card.id} 뒷면`} />
                                 <button onClick={() => navigate(`/video/movie/${card.id}`)}>
-                                    <span>지금보러가기</span> <img src="/ott/icon-paw.png" alt="" />
+                                    <span>지금보러가기</span>{' '}
+                                    <img src="/ott/icon-paw.webp" alt="" />
                                 </button>
                             </div>
                         </ReactCardFlip>

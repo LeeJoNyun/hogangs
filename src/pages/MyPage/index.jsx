@@ -9,7 +9,7 @@ const MyPage = () => {
     // 기본 프로필 상태
     const [dogProfile, setDogProfile] = useState({
         name: '호강이',
-        profileImage: '/mypage/hogangImg.png',
+        profileImage: '/mypage/hogangImg.webp',
     });
 
     // 초기 스토어 fetch

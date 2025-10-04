@@ -6,7 +6,7 @@ const VideosContent1 = () => {
         <section id="vidoescontent1">
             <div className="topbar">
                 <div className="topheader">
-                    <img src="/mypage/image103.png" alt="" />
+                    <img src="/mypage/image103.webp" alt="" />
                     <p>호강이님</p>
                 </div>
             </div>

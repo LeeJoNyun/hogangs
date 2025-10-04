@@ -7,7 +7,7 @@ const Step3 = () => {
         <div className="join-overlay">
             <div className="join-modal">
                 <div className="left">
-                    <img src="/auth/joinBg3.png" alt="" />
+                    <img src="/auth/joinBg3.webp" alt="" />
                 </div>
                 <div className="right">
                     <i className="close-btn" onClick={() => setJoinModal(false)}>

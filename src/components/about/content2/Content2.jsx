@@ -69,7 +69,7 @@ const Content2 = () => {
     return (
         <section id="content2" ref={rootRef}>
             <div className="slogan">
-                <img src="/about/TitleBox.png" alt="" />
+                <img src="/about/TitleBox.webp" alt="" />
                 <span
                     data-aos="fade-up"
                     data-aos-delay="200" // 0.2초 후 실행
@@ -108,13 +108,13 @@ const Content2 = () => {
 
             <div className="dogicon">
                 <span data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
-                    <img src="/about/01.png" alt="" />
+                    <img src="/about/01.webp" alt="" />
                 </span>
                 <span data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1500">
-                    <img src="/about/02.png" alt="" />
+                    <img src="/about/02.webp" alt="" />
                 </span>
                 <span data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2000">
-                    <img src="/about/03.png" alt="" />
+                    <img src="/about/03.webp" alt="" />
                 </span>
             </div>
         </section>

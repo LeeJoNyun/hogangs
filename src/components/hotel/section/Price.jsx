@@ -1,8 +1,8 @@
 const Price = () => {
     return (
         <section id="hotel_price">
-            <img className="priceImg" src="/hotel/price.png" alt="" />
-            <img className="priceImgMobile" src="/hotel/priceMobile.png" alt="" />
+            <img className="priceImg" src="/hotel/price.webp" alt="" />
+            <img className="priceImgMobile" src="/hotel/priceMobile.webp" alt="" />
         </section>
     );
 };

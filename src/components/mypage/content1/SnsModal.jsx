@@ -87,7 +87,7 @@ const SnsModal = ({ onClose }) => {
                     <div className="snsWrap">
                         <div className="sns google">
                             <div className="icon">
-                                <img src="/auth/google.png" alt="" />
+                                <img src="/auth/google.webp" alt="" />
                             </div>
                             <div className="txt">
                                 <p>구글</p>
@@ -96,7 +96,7 @@ const SnsModal = ({ onClose }) => {
                         </div>
                         <div className="sns kakao">
                             <div className="icon">
-                                <img src="/auth/kakao.png" alt="" />
+                                <img src="/auth/kakao.webp" alt="" />
                             </div>
                             <div className="txt">
                                 <p>카카오</p>

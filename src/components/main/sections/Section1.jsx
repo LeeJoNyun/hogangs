@@ -5,11 +5,11 @@ import { useNavigate } from 'react-router-dom';
 gsap.registerPlugin(ScrollTrigger);
 
 const PHOTOS = [
-    '/main/Mainbubble-01.png',
-    '/main/Mainbubble-02.png',
-    '/main/Mainbubble-03.png',
-    '/main/Mainbubble-04.png',
-    '/main/Mainbubble-05.png',
+    '/main/Mainbubble-01.webp',
+    '/main/Mainbubble-02.webp',
+    '/main/Mainbubble-03.webp',
+    '/main/Mainbubble-04.webp',
+    '/main/Mainbubble-05.webp',
 ];
 
 export default function Section1() {

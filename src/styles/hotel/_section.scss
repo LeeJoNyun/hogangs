@@ -1,1069 +1,1068 @@
-@use "./../utils" as *;
+@use './../utils' as *;
 
 #hotel_reservation {
-  width: 100%;
-  height: 1092px;
-  background: url("/hotel/MainCon1.png") no-repeat 0 0 / cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .inner {
-    height: 685px;
+    width: 100%;
+    height: 1092px;
+    background: url('/hotel/MainCon1.webp') no-repeat 0 0 / cover;
     display: flex;
-    flex-flow: column;
+    justify-content: center;
     align-items: center;
-
-    .title {
-      margin-bottom: 82px;
-      span {
-        @include fontFormat(
-          $color: #060606,
-          $family: "Paperlogy",
-          $size: 38px,
-          $weight: 600
-        );
-      }
-      .color {
-        @include fontFormat(
-          $color: #478985,
-          $family: "Paperlogy",
-          $size: 38px,
-          $weight: 600
-        );
-      }
-    } //end
-
-    .calendar {
-      width: 100%;
-      height: 538px;
-      position: relative;
-      .list {
-        width: 100%;
-        height: 100%;
+    .inner {
+        height: 685px;
         display: flex;
-        justify-content: space-between;
-        .content {
-          display: flex;
-          flex-flow: column;
-          align-items: center;
-          width: 182px;
-          height: 538px;
-          gap: 18px;
-
-          .top {
-            width: 52px;
-            height: 72px;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: center;
-            gap: 7px;
-            border-radius: 155px;
-            background: var(--Grey-grey-200, #b6b6b6);
-            span {
-              color: var(--White, #fefefe);
-              text-align: center;
-              font-family: Paperlogy;
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: normal;
-            }
-            .line {
-              width: 26px;
-              height: 1px;
-              background-color: #fefefe;
-            }
-            &.on {
-              background: #7abab6;
-            }
-          }
-
-          .bottom {
-            width: 100%;
-            height: 450px;
-            display: flex;
-            flex-flow: column;
-            gap: 10px;
-            position: relative;
-            &::after {
-              content: "";
-              position: absolute;
-              top: 0;
-              bottom: 0;
-              right: -10px;
-              width: 0;
-              border-right: 2px dotted #7abab6; /* ✅ 세로 도트 */
-              pointer-events: none;
-            }
-            li {
-              width: 180px;
-              height: 70px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              background: #e2f8f7;
-              border-radius: 20px;
-              .context {
-                width: 147px;
-                height: 35px;
-                display: flex;
-                flex-flow: column;
-                .time {
-                  color: #060606;
-                  font-family: Pretendard;
-                  font-size: 12px;
-                }
-                span {
-                  color: #060606;
-                  font-family: Pretendard;
-                  font-size: 14px;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: normal;
-                }
-              }
-              &.disable {
-                background: #efefef;
-                .time {
-                  color: #818181;
-                }
-                span {
-                  color: #616161;
-                }
-              }
-            }
-          }
-
-          &:last-child {
-            .bottom::after {
-              content: none;
-            }
-          }
-        }
-      }
-      .prev,
-      .next {
-        width: 50px;
-        height: 50px;
-        border: 1px solid #959595;
-        border-radius: 100%;
-        display: flex;
-        justify-content: center;
+        flex-flow: column;
         align-items: center;
-        &:hover {
-          border-color: #b7e2df;
-          path {
-            fill: #b7e2df;
-          }
+
+        .title {
+            margin-bottom: 82px;
+            span {
+                @include fontFormat(
+                    $color: #060606,
+                    $family: 'Paperlogy',
+                    $size: 38px,
+                    $weight: 600
+                );
+            }
+            .color {
+                @include fontFormat(
+                    $color: #478985,
+                    $family: 'Paperlogy',
+                    $size: 38px,
+                    $weight: 600
+                );
+            }
+        } //end
+
+        .calendar {
+            width: 100%;
+            height: 538px;
+            position: relative;
+            .list {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                .content {
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+                    width: 182px;
+                    height: 538px;
+                    gap: 18px;
+
+                    .top {
+                        width: 52px;
+                        height: 72px;
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 7px;
+                        border-radius: 155px;
+                        background: var(--Grey-grey-200, #b6b6b6);
+                        span {
+                            color: var(--White, #fefefe);
+                            text-align: center;
+                            font-family: Paperlogy;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                        .line {
+                            width: 26px;
+                            height: 1px;
+                            background-color: #fefefe;
+                        }
+                        &.on {
+                            background: #7abab6;
+                        }
+                    }
+
+                    .bottom {
+                        width: 100%;
+                        height: 450px;
+                        display: flex;
+                        flex-flow: column;
+                        gap: 10px;
+                        position: relative;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            right: -10px;
+                            width: 0;
+                            border-right: 2px dotted #7abab6; /* ✅ 세로 도트 */
+                            pointer-events: none;
+                        }
+                        li {
+                            width: 180px;
+                            height: 70px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: #e2f8f7;
+                            border-radius: 20px;
+                            .context {
+                                width: 147px;
+                                height: 35px;
+                                display: flex;
+                                flex-flow: column;
+                                .time {
+                                    color: #060606;
+                                    font-family: Pretendard;
+                                    font-size: 12px;
+                                }
+                                span {
+                                    color: #060606;
+                                    font-family: Pretendard;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                }
+                            }
+                            &.disable {
+                                background: #efefef;
+                                .time {
+                                    color: #818181;
+                                }
+                                span {
+                                    color: #616161;
+                                }
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        .bottom::after {
+                            content: none;
+                        }
+                    }
+                }
+            }
+            .prev,
+            .next {
+                width: 50px;
+                height: 50px;
+                border: 1px solid #959595;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    border-color: #b7e2df;
+                    path {
+                        fill: #b7e2df;
+                    }
+                }
+            }
+            .prev {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -100px;
+            }
+            .next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -100px;
+            }
         }
-      }
-      .prev {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -100px;
-      }
-      .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: -100px;
-      }
     }
-  }
 }
 // reservation
 
 #hotel_careService {
-  width: 100%;
-  height: 558px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #b7e2df;
-  .inner {
-    height: 358px;
+    width: 100%;
+    height: 558px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    .left {
-      width: 470px;
-      height: 216px;
-      display: flex;
-      flex-flow: column;
-      gap: 50px;
-      .top {
-        color: #fefefe;
-        font-family: Paperlogy;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-      }
-      .bottom {
-        color: #353535;
-        font-family: Pretendard;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-      }
-    }
-
-    .right {
-      width: 844px;
-      height: 366px;
-      .cards {
-        width: 100%;
-        height: 100%;
+    background: #b7e2df;
+    .inner {
+        height: 358px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        li {
-          width: 268px;
-          height: 100%;
-          border-radius: 20px;
-          background: #eef9f8;
-
-          display: flex;
-          justify-content: center;
-          flex-flow: column;
-          align-items: center;
-          .icon {
-            width: 140px;
-            height: 140px;
+        .left {
+            width: 470px;
+            height: 216px;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 100%;
-            background-color: #fefefe;
-            margin-bottom: 32px;
-          }
-          strong {
-            color: #060606;
-            text-align: center;
-            font-family: Paperlogy;
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            margin-bottom: 16px;
-          }
-          p {
-            color: #353535;
-            text-align: center;
-            /* Medium/16px */
-            font-family: Pretendard;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 130%; /* 20.8px */
-          }
+            flex-flow: column;
+            gap: 50px;
+            .top {
+                color: #fefefe;
+                font-family: Paperlogy;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            .bottom {
+                color: #353535;
+                font-family: Pretendard;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
         }
-      }
+
+        .right {
+            width: 844px;
+            height: 366px;
+            .cards {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li {
+                    width: 268px;
+                    height: 100%;
+                    border-radius: 20px;
+                    background: #eef9f8;
+
+                    display: flex;
+                    justify-content: center;
+                    flex-flow: column;
+                    align-items: center;
+                    .icon {
+                        width: 140px;
+                        height: 140px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 100%;
+                        background-color: #fefefe;
+                        margin-bottom: 32px;
+                    }
+                    strong {
+                        color: #060606;
+                        text-align: center;
+                        font-family: Paperlogy;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        margin-bottom: 16px;
+                    }
+                    p {
+                        color: #353535;
+                        text-align: center;
+                        /* Medium/16px */
+                        font-family: Pretendard;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%; /* 20.8px */
+                    }
+                }
+            }
+        }
     }
-  }
 }
 // hotel_careService
 
 #hotel_price {
-  width: 100%;
-  .img {
     width: 100%;
-    height: auto;
-    display: block;
-  }
-  .priceImgMobile {
-    display: none;
-  }
+    .img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .priceImgMobile {
+        display: none;
+    }
 }
 //hotel_price
 
 #hotel_interaction {
-  width: 100%;
-  height: 1100px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  background: #b7e2df;
-  .left {
-    width: 462px;
-    height: 780px;
+    width: 100%;
+    height: 1100px;
     display: flex;
-    flex-flow: column;
-    position: absolute;
-    left: 260px;
-    gap: 114px;
-    .top {
-      width: 100%;
-      height: 371px;
-      display: flex;
-      flex-flow: column;
-      gap: 50px;
-      .title {
-        width: 100%;
-        height: 132px;
+    align-items: center;
+    position: relative;
+    background: #b7e2df;
+    .left {
+        width: 462px;
+        height: 780px;
         display: flex;
         flex-flow: column;
-        strong {
-          display: block;
-          color: #fefefe;
-          font-family: Paperlogy;
-          font-size: 48px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 66px; /* 137.5% */
-          letter-spacing: 0.48px;
-        }
-        span {
-          display: block;
-          color: #4a9f99;
-          font-family: Paperlogy;
-          font-size: 48px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 66px;
-          letter-spacing: 0.48px;
-        }
-      }
-      .context {
-        width: 100%;
-        height: auto;
-        p {
-          color: #fefefe;
-          font-family: Pretendard;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 27px; /* 135% */
-        }
-      }
-    }
-    .bottom {
-      width: 343px;
-      height: 295px;
-      .hotel_interaction_swiper {
-        width: 100%;
-        height: 100%;
-        .swiper-slide {
-          width: 100%;
-          height: 87px;
-          border-radius: 20px;
-          background: #fefefe;
-          opacity: 0.5;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          .inner {
-            width: 294px;
-            height: 100%;
+        position: absolute;
+        left: 260px;
+        gap: 114px;
+        .top {
+            width: 100%;
+            height: 371px;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .profile {
-              width: 50px;
-              height: 50px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              background-color: #fff;
-              img {
+            flex-flow: column;
+            gap: 50px;
+            .title {
+                width: 100%;
+                height: 132px;
+                display: flex;
+                flex-flow: column;
+                strong {
+                    display: block;
+                    color: #fefefe;
+                    font-family: Paperlogy;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 66px; /* 137.5% */
+                    letter-spacing: 0.48px;
+                }
+                span {
+                    display: block;
+                    color: #4a9f99;
+                    font-family: Paperlogy;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 66px;
+                    letter-spacing: 0.48px;
+                }
+            }
+            .context {
+                width: 100%;
+                height: auto;
+                p {
+                    color: #fefefe;
+                    font-family: Pretendard;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 27px; /* 135% */
+                }
+            }
+        }
+        .bottom {
+            width: 343px;
+            height: 295px;
+            .hotel_interaction_swiper {
                 width: 100%;
                 height: 100%;
-                border-radius: 100%;
-              }
+                .swiper-slide {
+                    width: 100%;
+                    height: 87px;
+                    border-radius: 20px;
+                    background: #fefefe;
+                    opacity: 0.5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .inner {
+                        width: 294px;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .profile {
+                            width: 50px;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #fff;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 100%;
+                            }
+                        }
+                        .reply {
+                            width: 223px;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2; /* 2줄까지만 보여주기 */
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            line-height: 22.308px;
+                            color: #000;
+                            font-family: Pretendard;
+                            font-size: 15.615px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .swiper-slide-active {
+                    opacity: 1;
+                }
+                .swiper-slide-next {
+                    opacity: 0.8;
+                }
             }
-            .reply {
-              width: 223px;
-              display: -webkit-box;
-              -webkit-line-clamp: 2; /* 2줄까지만 보여주기 */
-              -webkit-box-orient: vertical;
-              overflow: hidden;
-              line-height: 22.308px;
-              color: #000;
-              font-family: Pretendard;
-              font-size: 15.615px;
-              font-weight: 400;
-            }
-          }
         }
-        .swiper-slide-active {
-          opacity: 1;
+    }
+    .rolling_area {
+        width: 1019px;
+        height: 100%; // 섹션 높이만큼 마스크
+        display: grid;
+        grid-template-columns: repeat(3, 330px);
+        gap: 16px;
+        position: absolute;
+        right: 60px;
+    }
+
+    .col {
+        position: relative;
+        overflow: hidden; // 마스크
+        width: 330px;
+
+        .track {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            animation: roll-up 53s linear infinite; // 기본: 위로
+            will-change: transform;
         }
-        .swiper-slide-next {
-          opacity: 0.8;
+
+        &.down .track {
+            // 가운데만 아래로
+            animation-name: roll-down;
+            animation-duration: 64s;
         }
-      }
-    }
-  }
-  .rolling_area {
-    width: 1019px;
-    height: 100%; // 섹션 높이만큼 마스크
-    display: grid;
-    grid-template-columns: repeat(3, 330px);
-    gap: 16px;
-    position: absolute;
-    right: 60px;
-  }
 
-  .col {
-    position: relative;
-    overflow: hidden; // 마스크
-    width: 330px;
-
-    .track {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      animation: roll-up 53s linear infinite; // 기본: 위로
-      will-change: transform;
+        img {
+            width: 330px;
+            height: 470px;
+            display: block;
+            object-fit: cover;
+        }
     }
 
-    &.down .track {
-      // 가운데만 아래로
-      animation-name: roll-down;
-      animation-duration: 64s;
+    // 시작 타이밍 살짝 다르게 (자연스러움)
+    .col:nth-child(1) .track {
+        animation-delay: -2s;
     }
-
-    img {
-      width: 330px;
-      height: 470px;
-      display: block;
-      object-fit: cover;
+    .col:nth-child(2) .track {
+        animation-delay: -5s;
     }
-  }
-
-  // 시작 타이밍 살짝 다르게 (자연스러움)
-  .col:nth-child(1) .track {
-    animation-delay: -2s;
-  }
-  .col:nth-child(2) .track {
-    animation-delay: -5s;
-  }
-  .col:nth-child(3) .track {
-    animation-delay: -1s;
-  }
+    .col:nth-child(3) .track {
+        animation-delay: -1s;
+    }
 } //hotel_interaction
 
 @keyframes roll-up {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-50%);
-  }
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-50%);
+    }
 }
 @keyframes roll-down {
-  from {
-    transform: translateY(-50%);
-  }
-  to {
-    transform: translateY(0);
-  }
+    from {
+        transform: translateY(-50%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 #introduce_hotel_service {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #eef9f8;
-  .inner {
-    height: 760px;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-flow: column;
+    justify-content: center;
     align-items: center;
-    span {
-      color: #454545;
-      font-family: Pretendard;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 30px; /* 150% */
-    }
-    .headlineWrap {
-      .headline {
-        display: block;
-      }
-      .headlineMobile {
-        display: none;
-      }
-    }
-
-    .hotel_introduce_swiper {
-      width: 100%;
-      height: 523px;
-      overflow: visible;
-      gap: 64px;
-      position: absolute;
-      bottom: 0;
-      .swiper-slide {
-        width: 453px;
-        height: 453px;
-        background: url("/hotel/introduce/Bubble.png") no-repeat center/cover;
+    background: #eef9f8;
+    .inner {
+        height: 760px;
         display: flex;
+        flex-flow: column;
         align-items: center;
-        justify-content: center;
-        .slide_inner {
-          width: 250px;
-          height: 279px;
-          display: flex;
-          flex-flow: column;
-          gap: 26px;
-          align-items: center;
-          .top {
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-            .title {
-              display: flex;
-              width: auto;
-              height: auto;
-              padding: 6px 14px;
-              border-radius: 22.52px;
-              background: #cecece;
-              color: #fefefe;
-              font-family: Pretendard;
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: normal;
-            }
-            strong {
-              color: #454545;
-              text-align: center;
-              font-family: Pretendard;
-              font-size: 20px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: normal;
-            }
-          }
-          .img {
-            width: 226px;
-            height: 104px;
-            border-radius: 17.323px;
-            opacity: 0.7;
-            object-fit: contain;
-            // object-fit: cover;
-          }
-          .bottom {
-            display: block;
-            p {
-              color: #666;
-              text-align: center;
-              font-family: Pretendard;
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 130%; /* 18.2px */
-            }
-          }
+        span {
+            color: #454545;
+            font-family: Pretendard;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; /* 150% */
         }
-      }
-      .swiper-slide-active {
-        width: 523px;
-        height: 523px;
-        gap: 30px;
-        .slide_inner {
-          width: 296px;
-          height: 345px;
-          .top {
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: space-between;
-            gap: 18px;
-            .title {
-              padding: 8px 16px;
-              border-radius: 26px;
-              background: #4a9f99;
-              font-family: Pretendard;
-              color: #fefefe;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: normal;
+        .headlineWrap {
+            .headline {
+                display: block;
             }
-            strong {
-              color: #454545;
-              text-align: center;
-              font-family: Pretendard;
-              font-size: 24px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: normal;
+            .headlineMobile {
+                display: none;
             }
-          }
-          .img {
-            width: 260px;
-            height: 140px;
-            border-radius: 20px;
-            opacity: 1;
-          }
-          .bottom {
-            display: block;
-            width: auto;
-            height: auto;
-            p {
-              color: #666;
-              text-align: center;
-              font-family: Pretendard;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 130%; /* 20.8px */
-            }
-          }
         }
-      }
+
+        .hotel_introduce_swiper {
+            width: 100%;
+            height: 523px;
+            overflow: visible;
+            gap: 64px;
+            position: absolute;
+            bottom: 0;
+            .swiper-slide {
+                width: 453px;
+                height: 453px;
+                background: url('/hotel/introduce/Bubble.webp') no-repeat center/cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .slide_inner {
+                    width: 250px;
+                    height: 279px;
+                    display: flex;
+                    flex-flow: column;
+                    gap: 26px;
+                    align-items: center;
+                    .top {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 16px;
+                        .title {
+                            display: flex;
+                            width: auto;
+                            height: auto;
+                            padding: 6px 14px;
+                            border-radius: 22.52px;
+                            background: #cecece;
+                            color: #fefefe;
+                            font-family: Pretendard;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                        strong {
+                            color: #454545;
+                            text-align: center;
+                            font-family: Pretendard;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+                    }
+                    .img {
+                        width: 226px;
+                        height: 104px;
+                        border-radius: 17.323px;
+                        opacity: 0.7;
+                        object-fit: contain;
+                        // object-fit: cover;
+                    }
+                    .bottom {
+                        display: block;
+                        p {
+                            color: #666;
+                            text-align: center;
+                            font-family: Pretendard;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 130%; /* 18.2px */
+                        }
+                    }
+                }
+            }
+            .swiper-slide-active {
+                width: 523px;
+                height: 523px;
+                gap: 30px;
+                .slide_inner {
+                    width: 296px;
+                    height: 345px;
+                    .top {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 18px;
+                        .title {
+                            padding: 8px 16px;
+                            border-radius: 26px;
+                            background: #4a9f99;
+                            font-family: Pretendard;
+                            color: #fefefe;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                        strong {
+                            color: #454545;
+                            text-align: center;
+                            font-family: Pretendard;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+                    }
+                    .img {
+                        width: 260px;
+                        height: 140px;
+                        border-radius: 20px;
+                        opacity: 1;
+                    }
+                    .bottom {
+                        display: block;
+                        width: auto;
+                        height: auto;
+                        p {
+                            color: #666;
+                            text-align: center;
+                            font-family: Pretendard;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 130%; /* 20.8px */
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
 } //#introduce_hotel_service
 
 #hotel_photo_section {
-  width: 100%;
-  height: 1317px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  position: relative;
-  .inner {
-    height: 997px;
-    position: relative;
-    .right {
-      width: 587px;
-      display: flex;
-      flex-flow: column;
-      gap: 62px;
-      align-items: end;
-      position: absolute;
-      right: 0;
-      top: 0;
-      .logo {
-        width: 172px;
-        height: 87px;
-        background: url("/hotel/Logo-confirmed.png") no-repeat center/contain;
-      }
-      span {
-        white-space: normal;
-        text-align: right;
-        color: #353535;
-        font-family: Pretendard;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 130%; /* 28.6px */
-      }
-    }
-
-    .img1 {
-      width: 708px;
-      height: 432px;
-      position: absolute;
-      left: 0;
-      top: 20px;
-    }
-    .img2 {
-      width: 549px;
-      height: 358px;
-      position: absolute;
-      right: -100px;
-      bottom: 172px;
-    }
-    .img3 {
-      width: 421px;
-      height: 286px;
-      position: absolute;
-      left: -80px;
-      bottom: 231px;
-    }
-    .img4 {
-      width: 268px;
-      height: 185px;
-      position: absolute;
-      right: 382px;
-      bottom: 69px;
-      z-index: 2;
-    }
-  }
-  .text_marquee_area {
     width: 100%;
-    position: absolute;
-    bottom: 51px;
-    .marquee_wrapper {
-      width: 100%;
-      position: relative;
-      overflow: hidden;
-      white-space: nowrap;
-      width: 100%;
-      background: white;
-      .marquee__inner {
-        display: inline-flex;
-        animation: marquee 30s linear infinite;
-        span {
-          -webkit-text-stroke-width: 5px;
-          -webkit-text-stroke-color: var(--Green-green-500, #b7e2df);
-          font-family: Paperlogy;
-          font-size: 220px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: normal;
-          letter-spacing: 8.8px;
-          text-transform: uppercase;
-          color: transparent;
-          -webkit-text-stroke: 3px #b7e2df; /* 기본 라인 텍스트 */
-
-          /* 내부 색상용 배경 (가운데에서 퍼지도록 radial-gradient 사용) */
-          background: radial-gradient(circle, #c2f0ed 0%, transparent 60%);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 0% 0%; /* hover 전에는 완전 작게 */
-          -webkit-background-clip: text;
-          background-clip: text;
-
-          transition: background-size 0.8s ease;
+    height: 1317px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+    .inner {
+        height: 997px;
+        position: relative;
+        .right {
+            width: 587px;
+            display: flex;
+            flex-flow: column;
+            gap: 62px;
+            align-items: end;
+            position: absolute;
+            right: 0;
+            top: 0;
+            .logo {
+                width: 172px;
+                height: 87px;
+                background: url('/hotel/Logo-confirmed.webp') no-repeat center/contain;
+            }
+            span {
+                white-space: normal;
+                text-align: right;
+                color: #353535;
+                font-family: Pretendard;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%; /* 28.6px */
+            }
         }
-        &:hover span {
-          -webkit-text-stroke: 1px;
-          background-size: 200% 200%; /* hover 시 크게 확장 */
+
+        .img1 {
+            width: 708px;
+            height: 432px;
+            position: absolute;
+            left: 0;
+            top: 20px;
         }
-      }
+        .img2 {
+            width: 549px;
+            height: 358px;
+            position: absolute;
+            right: -100px;
+            bottom: 172px;
+        }
+        .img3 {
+            width: 421px;
+            height: 286px;
+            position: absolute;
+            left: -80px;
+            bottom: 231px;
+        }
+        .img4 {
+            width: 268px;
+            height: 185px;
+            position: absolute;
+            right: 382px;
+            bottom: 69px;
+            z-index: 2;
+        }
     }
-  }
+    .text_marquee_area {
+        width: 100%;
+        position: absolute;
+        bottom: 51px;
+        .marquee_wrapper {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+            background: white;
+            .marquee__inner {
+                display: inline-flex;
+                animation: marquee 30s linear infinite;
+                span {
+                    -webkit-text-stroke-width: 5px;
+                    -webkit-text-stroke-color: var(--Green-green-500, #b7e2df);
+                    font-family: Paperlogy;
+                    font-size: 220px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    letter-spacing: 8.8px;
+                    text-transform: uppercase;
+                    color: transparent;
+                    -webkit-text-stroke: 3px #b7e2df; /* 기본 라인 텍스트 */
+
+                    /* 내부 색상용 배경 (가운데에서 퍼지도록 radial-gradient 사용) */
+                    background: radial-gradient(circle, #c2f0ed 0%, transparent 60%);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 0% 0%; /* hover 전에는 완전 작게 */
+                    -webkit-background-clip: text;
+                    background-clip: text;
+
+                    transition: background-size 0.8s ease;
+                }
+                &:hover span {
+                    -webkit-text-stroke: 1px;
+                    background-size: 200% 200%; /* hover 시 크게 확장 */
+                }
+            }
+        }
+    }
 } //hotel_photo_section
 
 @keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 @media screen and (max-width: 600px) {
-  #hotel_reservation {
-    background: #fff;
-    width: 390px;
-    height: 844px;
-    .inner {
-      .title {
-        margin-bottom: 62px;
-        span {
-          font-size: 32px;
-        }
-        .color {
-          font-size: 32px;
-        }
-      }
-      .calendar {
-        .list {
-          overflow: hidden;
-          width: 100%;
-          display: flex;
-          gap: 42px;
-          .content {
-            width: 158px;
-            .top {
-              width: 52px;
-              height: 70px;
-              span {
-                font-size: 14px;
-              }
+    #hotel_reservation {
+        background: #fff;
+        width: 390px;
+        height: 844px;
+        .inner {
+            .title {
+                margin-bottom: 62px;
+                span {
+                    font-size: 32px;
+                }
+                .color {
+                    font-size: 32px;
+                }
             }
-            .bottom {
-              width: 100%;
-              gap: 6px;
-              &::after {
-                right: -21px;
-              }
-              li {
-                width: 128px;
-                padding: 18px 15px 17px 15px;
-              }
+            .calendar {
+                .list {
+                    overflow: hidden;
+                    width: 100%;
+                    display: flex;
+                    gap: 42px;
+                    .content {
+                        width: 158px;
+                        .top {
+                            width: 52px;
+                            height: 70px;
+                            span {
+                                font-size: 14px;
+                            }
+                        }
+                        .bottom {
+                            width: 100%;
+                            gap: 6px;
+                            &::after {
+                                right: -21px;
+                            }
+                            li {
+                                width: 128px;
+                                padding: 18px 15px 17px 15px;
+                            }
+                        }
+                    }
+                }
+                .prev,
+                .next {
+                    display: none;
+                }
             }
-          }
         }
-        .prev,
-        .next {
-          display: none;
-        }
-      }
     }
-  }
-  #introduce_hotel_service {
-    width: 100%;
-    height: 669px;
-    margin-top: 75px;
-    .inner {
-      height: 669px;
-      gap: 37px;
-      span {
-        font-size: 18px;
-      }
-      .headlineWrap {
-        .headline {
-          display: none;
-        }
-        .headlineMobile {
-          display: block;
-        }
-      }
-      .hotel_introduce_swiper {
-        width: 358px;
-        height: 358px;
-        bottom: 100px;
-        .swiper-slide {
-          width: 358px;
-          height: 358px;
-          background: url("/hotel/introduce/BubbleMobile.png") no-repeat
-            center/cover;
-          .slide_inner {
-            width: 237px;
-            height: 249px;
-            gap: 20px;
-            .top {
-              gap: 14px;
-              .title {
-                font-size: 13px;
-              }
-              strong {
+    #introduce_hotel_service {
+        width: 100%;
+        height: 669px;
+        margin-top: 75px;
+        .inner {
+            height: 669px;
+            gap: 37px;
+            span {
                 font-size: 18px;
-              }
             }
-            .img {
-              width: 192px;
-              height: 100px;
-              border-radius: 14.286px;
+            .headlineWrap {
+                .headline {
+                    display: none;
+                }
+                .headlineMobile {
+                    display: block;
+                }
             }
-            .bottom {
-              width: 100%;
-              p {
-                font-size: 13px;
-              }
+            .hotel_introduce_swiper {
+                width: 358px;
+                height: 358px;
+                bottom: 100px;
+                .swiper-slide {
+                    width: 358px;
+                    height: 358px;
+                    background: url('/hotel/introduce/BubbleMobile.webp') no-repeat center/cover;
+                    .slide_inner {
+                        width: 237px;
+                        height: 249px;
+                        gap: 20px;
+                        .top {
+                            gap: 14px;
+                            .title {
+                                font-size: 13px;
+                            }
+                            strong {
+                                font-size: 18px;
+                            }
+                        }
+                        .img {
+                            width: 192px;
+                            height: 100px;
+                            border-radius: 14.286px;
+                        }
+                        .bottom {
+                            width: 100%;
+                            p {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
-  #hotel_careService {
-    width: 100%;
-    height: 1127px;
-    .inner {
-      height: 967px;
-      flex-direction: column;
-      .left {
+    #hotel_careService {
         width: 100%;
-        height: 159px;
-        gap: 20px;
-        .top {
-          font-size: 32px;
-        }
-        .bottom {
-          font-size: 16px;
-        }
-      }
-      .right {
-        height: 768px;
-        .cards {
-          flex-direction: column;
-          gap: 15px;
-          justify-content: center;
-          li {
-            width: 358px;
-            height: 246px;
-            padding: 25px 73px;
-            .icon {
-              width: 100px;
-              height: 104px;
-              padding: 23px 21px;
-              margin-bottom: 24px;
-              svg {
-                width: 58px;
-                height: 58px;
-              }
+        height: 1127px;
+        .inner {
+            height: 967px;
+            flex-direction: column;
+            .left {
+                width: 100%;
+                height: 159px;
+                gap: 20px;
+                .top {
+                    font-size: 32px;
+                }
+                .bottom {
+                    font-size: 16px;
+                }
             }
-            strong {
-              font-size: 18px;
+            .right {
+                height: 768px;
+                .cards {
+                    flex-direction: column;
+                    gap: 15px;
+                    justify-content: center;
+                    li {
+                        width: 358px;
+                        height: 246px;
+                        padding: 25px 73px;
+                        .icon {
+                            width: 100px;
+                            height: 104px;
+                            padding: 23px 21px;
+                            margin-bottom: 24px;
+                            svg {
+                                width: 58px;
+                                height: 58px;
+                            }
+                        }
+                        strong {
+                            font-size: 18px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
             }
-            p {
-              font-size: 14px;
-            }
-          }
         }
-      }
     }
-  }
-  #hotel_price {
-    width: 390px;
-    height: 1921px;
-    .priceImg {
-      display: none;
-    }
-    .priceImgMobile {
-      display: block;
-    }
-  }
-  #hotel_interactionMobile {
-    background: #b2ded9;
-    padding: 80px 16px;
-    width: 390px;
-    .inner {
-      width: 100%;
-      .top {
-        .title {
-          strong {
+    #hotel_price {
+        width: 390px;
+        height: 1921px;
+        .priceImg {
+            display: none;
+        }
+        .priceImgMobile {
             display: block;
-            font-size: 32px;
-            font-weight: 700;
-            color: #fff;
-            margin-bottom: 4px;
-            color: var(--White, #fefefe);
-            text-shadow: 0 4px 2px rgba(193, 217, 215, 0.5);
-            font-family: Paperlogy;
-          }
-          span {
-            font-size: 32px;
-            font-weight: 700;
-            color: #2d7167;
-            text-shadow: 0 4px 2px rgba(193, 217, 215, 0.5);
-            font-family: Paperlogy;
-          }
         }
-        .context {
-          margin-top: 40px;
-
-          p {
-            font-size: 14px;
-            color: #fff;
-          }
-        }
-      }
     }
-    // 후기 롤링 Swiper 영역
-    .review {
-      margin: 60px 0;
+    #hotel_interactionMobile {
+        background: #b2ded9;
+        padding: 80px 16px;
+        width: 390px;
+        .inner {
+            width: 100%;
+            .top {
+                .title {
+                    strong {
+                        display: block;
+                        font-size: 32px;
+                        font-weight: 700;
+                        color: #fff;
+                        margin-bottom: 4px;
+                        color: var(--White, #fefefe);
+                        text-shadow: 0 4px 2px rgba(193, 217, 215, 0.5);
+                        font-family: Paperlogy;
+                    }
+                    span {
+                        font-size: 32px;
+                        font-weight: 700;
+                        color: #2d7167;
+                        text-shadow: 0 4px 2px rgba(193, 217, 215, 0.5);
+                        font-family: Paperlogy;
+                    }
+                }
+                .context {
+                    margin-top: 40px;
 
-      .hotel_interaction_swiperMobile {
-        width: 100%;
-        height: 80px;
-        display: flex;
-        gap: 21px;
-        border-radius: 20px;
-        justify-content: center;
-        align-items: center;
-        background: var(--White, #fefefe);
-        padding: 15px 41.309px 15px 22.309px;
-
-        .swiper-slide {
-          display: flex;
-          align-items: flex-start;
-
-          .inner {
-            width: 294px;
-            height: 50px;
-            padding: 15px 41.309px 15px 22.309px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 21px;
-            .profile {
-              display: flex;
-
-              img {
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                object-fit: cover;
-                flex-shrink: 0;
-              }
+                    p {
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                }
             }
-            .reply {
-              width: 223px;
-              height: 43px;
-              font-size: 14px;
-              display: -webkit-box;
-              -webkit-line-clamp: 2;
-              -webkit-box-orient: vertical;
-              overflow: hidden;
-              text-overflow: ellipsis;
+        }
+        // 후기 롤링 Swiper 영역
+        .review {
+            margin: 60px 0;
+
+            .hotel_interaction_swiperMobile {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                gap: 21px;
+                border-radius: 20px;
+                justify-content: center;
+                align-items: center;
+                background: var(--White, #fefefe);
+                padding: 15px 41.309px 15px 22.309px;
+
+                .swiper-slide {
+                    display: flex;
+                    align-items: flex-start;
+
+                    .inner {
+                        width: 294px;
+                        height: 50px;
+                        padding: 15px 41.309px 15px 22.309px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 21px;
+                        .profile {
+                            display: flex;
+
+                            img {
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                object-fit: cover;
+                                flex-shrink: 0;
+                            }
+                        }
+                        .reply {
+                            width: 223px;
+                            height: 43px;
+                            font-size: 14px;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
             }
-          }
         }
-      }
-    }
-    .rolling_area_mobile {
-      width: 100%;
-      height: 368px;
-      .swiper {
-        width: 100%;
-        height: 368px; // 원하는 높이
-      }
+        .rolling_area_mobile {
+            width: 100%;
+            height: 368px;
+            .swiper {
+                width: 100%;
+                height: 368px; // 원하는 높이
+            }
 
-      .swiper-slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
         }
-      }
     }
-  }
-  #hotel_photo_section {
-    height: 1566px;
-    .inner {
-      height: 1201px;
-      .right {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        span {
-          text-align: center;
-          /* Medium/16px */
-          font-family: Pretendard;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 130%;
+    #hotel_photo_section {
+        height: 1566px;
+        .inner {
+            height: 1201px;
+            .right {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                span {
+                    text-align: center;
+                    /* Medium/16px */
+                    font-family: Pretendard;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 130%;
+                }
+            }
+            .img1 {
+                width: 100%;
+                top: 0;
+            }
+            .img2 {
+                width: 100%;
+                right: 0;
+                bottom: 80px;
+            }
+            .img3 {
+                display: none;
+            }
         }
-      }
-      .img1 {
-        width: 100%;
-        top: 0;
-      }
-      .img2 {
-        width: 100%;
-        right: 0;
-        bottom: 80px;
-      }
-      .img3 {
-        display: none;
-      }
-    }
-    .text_marquee_area {
-      bottom: 80px;
-      .marquee_wrapper {
-        .marquee__inner {
-          span {
-            font-size: 100px;
-          }
+        .text_marquee_area {
+            bottom: 80px;
+            .marquee_wrapper {
+                .marquee__inner {
+                    span {
+                        font-size: 100px;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }

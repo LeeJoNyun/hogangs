@@ -1,16 +1,16 @@
 // 메인 con1-비주얼
 
 const posters = [
-    '/ott/movie1.png',
-    '/ott/movie2.png',
-    '/ott/movie3.png',
-    '/ott/movie4.png',
-    '/ott/movie5.png',
-    '/ott/movie6.png',
-    '/ott/movie7.png',
-    '/ott/movie8.png',
-    '/ott/movie9.png',
-    '/ott/movie10.png',
+    '/ott/movie1.webp',
+    '/ott/movie2.webp',
+    '/ott/movie3.webp',
+    '/ott/movie4.webp',
+    '/ott/movie5.webp',
+    '/ott/movie6.webp',
+    '/ott/movie7.webp',
+    '/ott/movie8.webp',
+    '/ott/movie9.webp',
+    '/ott/movie10.webp',
 ];
 
 const Visual = () => {
@@ -38,7 +38,7 @@ const Visual = () => {
                 </div>
             </div>
             <div className="img ">
-                <img src="/ott/dog.png" alt="강아지이미지" draggable={false} />
+                <img src="/ott/dog.webp" alt="강아지이미지" draggable={false} />
             </div>
         </div>
     );
